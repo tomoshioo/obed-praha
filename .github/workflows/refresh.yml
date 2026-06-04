@@ -1,0 +1,40 @@
+name: Refresh polední menu
+
+on:
+  schedule:
+    # GitHub cron je v UTC. Praha = UTC+2 (léto) / UTC+1 (zima).
+    - cron: "20 6 * * 1-5"   # ~08:20 ráno (CEST) – po–pá
+    - cron: "30 8 * * 1-5"   # ~10:30 dopoledne (CEST) – pojistka
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+
+concurrency:
+  group: refresh-menu
+  cancel-in-progress: false
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Stáhnout dnešní polední menu z menicka.cz
+        run: python scripts/scrape.py
+
+      - name: Commitnout aktualizovaná data
+        run: |
+          git config user.name "obed-bot"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/restaurants.json data/places.json
+          if git diff --staged --quiet; then
+            echo "Žádná změna v datech."
+          else
+            git commit -m "data: refresh menu $(date -u +%Y-%m-%dT%H:%MZ) [skip ci]"
+            git push
+          fi

@@ -1,0 +1,13 @@
+# pracovní / dočasné soubory scraperu
+data/raw/
+data/_sample*.json
+data/places_ids.json
+detail.html
+
+# python
+**/__pycache__/
+*.pyc
+
+# os
+.DS_Store
+Thumbs.db
