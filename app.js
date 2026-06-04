@@ -7,15 +7,14 @@
 
   var map = L.map("map", { zoomControl: true, attributionControl: true })
     .setView(PRAGUE, 13);
-  L.control.zoom({ position: "topright" }); // default already added; keep at topright on small screens via CSS if needed
 
-  L.tileLayer("https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png", {
+  L.tileLayer("https://{s}.basemaps.cartocdn.com/rastertiles/voyager/{z}/{x}/{y}{r}.png", {
     attribution:
       '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> ' +
       '&copy; <a href="https://carto.com/attributions">CARTO</a> &middot; ' +
       'menu <a href="https://www.menicka.cz" target="_blank" rel="noopener">Menicka.cz</a>',
     subdomains: "abcd",
-    maxZoom: 19,
+    maxZoom: 20,
   }).addTo(map);
 
   var cluster = L.markerClusterGroup({
@@ -41,15 +40,36 @@
       .trim();
   }
   function isSoup(t) {
-    return /^(?:pol[ée]vka|vývar|bujón|bujon|krém|krem|consom|čočková|gulášov|hovězí vývar)/i.test(
+    return /^(?:pol[ée]vka|vývar|bujón|bujon|krém|krem|consom|čočková|gulášov|hovězí vývar|drůbeží vývar)/i.test(
       String(t || "").trim()
     );
   }
   function districtLabel(d) {
     return String(d || "").replace("praha-", "Praha ");
   }
+  function priceNum(p) {
+    var m = String(p || "").replace(/\s/g, "").match(/(\d{2,4})/);
+    return m ? +m[1] : null;
+  }
+  // reprezentativní cena = nejlevnější "hlavní" jídlo (>= 80 Kč); levels pro barvu pinu
+  function priceInfo(menu) {
+    var nums = [];
+    (menu || []).forEach(function (d) {
+      var n = priceNum(d.price);
+      if (n) nums.push(n);
+    });
+    var mains = nums.filter(function (n) { return n >= 80; });
+    var min = mains.length ? Math.min.apply(null, mains)
+            : (nums.length ? Math.min.apply(null, nums) : null);
+    var level = "unknown";
+    if (mains.length) {
+      level = min < 130 ? "cheap" : (min < 180 ? "mid" : "high");
+    }
+    return { min: min, level: level, hasMain: mains.length > 0 };
+  }
 
   function card(r) {
+    var pi = priceInfo(r.menu);
     var rows = (r.menu || [])
       .map(function (d) {
         var name = esc(cleanDish(d.text));
@@ -62,30 +82,35 @@
       })
       .filter(Boolean)
       .join("");
+    var badge = pi.hasMain
+      ? '<span class="tip-badge">od ' + pi.min + " Kč</span>"
+      : "";
     return (
       '<div class="menu-tip">' +
-      '<div class="tip-name">' + esc(r.name) + "</div>" +
-      (r.address ? '<div class="tip-addr">' + esc(r.address) + "</div>" : "") +
-      '<div class="tip-menu">' +
-      (rows || '<span class="tip-empty">Dnes bez zveřejněného menu</span>') +
-      "</div>" +
-      '<div class="tip-foot"><span>' + esc(districtLabel(r.district)) + "</span>" +
-      '<a href="' + esc(r.url) + '" target="_blank" rel="noopener">menicka.cz ↗</a></div>' +
+        '<div class="tip-head">' +
+          badge +
+          '<div class="tip-name">' + esc(r.name) + "</div>" +
+          (r.address ? '<div class="tip-addr">' + esc(r.address) + "</div>" : "") +
+        "</div>" +
+        '<div class="tip-menu">' +
+          (rows || '<span class="tip-empty">Dnes bez zveřejněného menu</span>') +
+        "</div>" +
+        '<div class="tip-foot"><span class="pill">' + esc(districtLabel(r.district)) + "</span>" +
+          '<a href="' + esc(r.url) + '" target="_blank" rel="noopener">menicka.cz ↗</a></div>' +
       "</div>"
     );
   }
 
-  function makeIcon() {
+  function makeIcon(level) {
     return L.divIcon({
       className: "",
-      html: '<div class="rest-pin"><span>🍴</span></div>',
-      iconSize: [30, 30],
-      iconAnchor: [15, 30],
-      popupAnchor: [0, -28],
-      tooltipAnchor: [0, -26],
+      html: '<div class="pin lvl-' + level + '"><span>🍴</span></div>',
+      iconSize: [34, 34],
+      iconAnchor: [17, 33],
+      popupAnchor: [0, -30],
+      tooltipAnchor: [0, -28],
     });
   }
-  var ICON = makeIcon();
 
   var toastT;
   function toast(msg) {
@@ -113,7 +138,8 @@
     var markers = [];
     list.forEach(function (r) {
       if (typeof r.lat !== "number" || typeof r.lng !== "number") return;
-      var m = L.marker([r.lat, r.lng], { icon: ICON, title: r.name });
+      var pi = priceInfo(r.menu);
+      var m = L.marker([r.lat, r.lng], { icon: makeIcon(pi.level), title: r.name });
       var html = card(r);
       m.bindTooltip(html, {
         direction: "top",
@@ -158,10 +184,15 @@
   });
 
   /* ---------- geolocation ---------- */
-  function placeMe(latlng, accuracy) {
+  function placeMe(latlng) {
     if (meMarker) map.removeLayer(meMarker);
     meMarker = L.marker(latlng, {
-      icon: L.divIcon({ className: "", html: '<div class="me-dot"></div>', iconSize: [18, 18], iconAnchor: [9, 9] }),
+      icon: L.divIcon({
+        className: "",
+        html: '<div class="me"><div class="ring"></div><div class="dot"></div></div>',
+        iconSize: [20, 20],
+        iconAnchor: [10, 10],
+      }),
       zIndexOffset: 2000,
       interactive: false,
     }).addTo(map);
@@ -170,9 +201,7 @@
     if (!navigator.geolocation) return;
     map.locate({ setView: true, maxZoom: 15, enableHighAccuracy: true, timeout: 8000 });
   }
-  map.on("locationfound", function (e) {
-    placeMe(e.latlng, e.accuracy);
-  });
+  map.on("locationfound", function (e) { placeMe(e.latlng); });
   map.on("locationerror", function () {
     toast("Polohu se nepodařilo zjistit. Zadej místo do vyhledávání nahoře.");
   });
@@ -182,7 +211,7 @@
   function jumpToPlace(q) {
     q = (q || "").trim();
     if (!q) return;
-    if (!/praha|praha 1|vinohrad|žižkov|zizkov/i.test(q)) q = q + ", Praha";
+    if (!/praha|vinohrad|žižkov|zizkov|karlín|karlin|smíchov|smichov/i.test(q)) q = q + ", Praha";
     var url =
       "https://nominatim.openstreetmap.org/search?format=json&limit=1&accept-language=cs" +
       "&viewbox=14.22,50.18,14.71,49.94&bounded=1&q=" + encodeURIComponent(q);
