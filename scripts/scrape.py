@@ -130,6 +130,56 @@ def load_json(path, default):
     return default
 
 
+def merge_extra(feats):
+    """Slouci menicka feats s kuratorovanou vrstvou data/extra.json (vlastni weby restauraci).
+    - shoda s menicka zaznamem -> obohati o cas podavani + web_confirmed + odkaz na web
+    - nova restaurace (neni na menicce) -> prida jako source='web' s date-guardem (menu_date_web)
+    """
+    extra = load_json(os.path.join(DATA, "extra.json"), {})
+    rows = extra.get("restaurants", []) if isinstance(extra, dict) else []
+    if not rows:
+        return feats
+    by_url = {f.get("url"): f for f in feats}
+
+    def near(lat, lng):
+        best, bd = None, 1e9
+        for f in feats:
+            if f["lat"] is None:
+                continue
+            d = (f["lat"] - lat) ** 2 + (f["lng"] - lng) ** 2
+            if d < bd:
+                bd, best = d, f
+        return best if bd < (0.0009 ** 2) else None  # ~100 m
+
+    added = enriched = 0
+    for e in rows:
+        tgt = by_url.get(e.get("menicka_url")) if e.get("menicka_url") else None
+        if tgt is None and e.get("on_menicka"):
+            tgt = near(e["lat"], e["lng"])
+        if tgt is not None:
+            if e.get("time_from"):
+                tgt["time_from"] = e["time_from"]
+            if e.get("time_to"):
+                tgt["time_to"] = e["time_to"]
+            tgt["web_confirmed"] = bool(e.get("web_confirmed"))
+            tgt["website"] = e.get("website")
+            tgt["source_url"] = e.get("source_url")
+            enriched += 1
+        else:
+            feats.append({
+                "id": e["id"], "name": e["name"], "district": None,
+                "address": None, "lat": e["lat"], "lng": e["lng"],
+                "url": e.get("source_url") or e.get("website"),
+                "menu": e.get("menu", []),
+                "source": "web", "time_from": e.get("time_from"), "time_to": e.get("time_to"),
+                "web_confirmed": True, "website": e.get("website"),
+                "source_url": e.get("source_url"), "menu_date_web": e.get("menu_date"),
+            })
+            added += 1
+    print(f"  merge extra.json: obohaceno {enriched} menicka zaznamu, pridano {added} novych (web)")
+    return feats
+
+
 def main():
     os.makedirs(DATA, exist_ok=True)
     places_path = os.path.join(DATA, "places.json")
@@ -186,7 +236,12 @@ def main():
             "lng": p["lng"],
             "url": f"{BASE}/{r['id']}-{r['slug']}.html",
             "menu": r["menu"],
+            "source": "menicka",
+            "time_from": None, "time_to": None,
+            "web_confirmed": False, "website": None, "source_url": None,
         })
+
+    feats = merge_extra(feats)
 
     if menu_date is None:
         now_local = datetime.now()

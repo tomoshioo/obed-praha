@@ -127,8 +127,15 @@ body{
 .tip-foot{padding:9px 15px;border-top:1px solid #f3efec;font-size:11px;color:var(--muted);
   display:flex;justify-content:space-between;align-items:center;gap:8px}
 .tip-foot .pill{background:#f5f1ee;border-radius:999px;padding:2px 9px;font-weight:600;color:#57534e}
-.tip-foot a{color:var(--accent2);text-decoration:none;font-weight:700}
+.tip-foot a{color:var(--accent2);text-decoration:none;font-weight:700;white-space:nowrap}
 .tip-foot a:hover{text-decoration:underline}
+.tip-time{font-size:12px;margin-top:7px;color:#fff;opacity:.96;font-weight:600}
+.tip-foot .chips{display:flex;gap:5px;flex-wrap:wrap;align-items:center}
+.tip-foot .pill.src-web{background:#ecfdf5;color:#047857}
+.tip-foot .pill.src-men{background:#f5f1ee;color:#57534e}
+.tip-foot .pill.src-ok{background:#dcfce7;color:#166534;font-weight:700}
+.pin.web{box-shadow:0 0 0 2.5px #10b981,0 4px 10px rgba(0,0,0,.34)}
+.pin.web:hover,.pin.web.active{box-shadow:0 0 0 2.5px #10b981,0 8px 18px rgba(0,0,0,.42)}
 
 /* ---------- legend ---------- */
 .legend{

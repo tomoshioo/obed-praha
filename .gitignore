@@ -1,5 +1,6 @@
 # pracovní / dočasné soubory scraperu
 data/raw/
+data/research/
 data/_sample*.json
 data/places_ids.json
 detail.html

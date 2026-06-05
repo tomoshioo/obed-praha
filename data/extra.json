@@ -1,0 +1,794 @@
+{
+ "generated": "2026-06-05",
+ "menu_date": "pátek 5. 6. 2026",
+ "source": "vlastní weby restaurací (pilot Vinohrady/Žižkov)",
+ "restaurants": [
+  {
+   "id": "web-u-slovanske-lipy",
+   "name": "U Slovanské lípy",
+   "lat": 50.0874784,
+   "lng": 14.4534658,
+   "source": "web",
+   "website": "https://uslovanskelipy.cz/",
+   "source_url": "https://uslovanskelipy.cz/wp-content/uploads/2026/05/Lipa_Jidelni_listek.pdf",
+   "menu": [
+    {
+     "text": "Poctivá česnečka s olomouckým tvarůžkem a opečeným chlebem",
+     "price": "42 Kč"
+    },
+    {
+     "text": "Polévka dle denní nabídky – zeptejte se obsluhy",
+     "price": "42 Kč"
+    },
+    {
+     "text": "PÁ 5.6. – Guláš z hovězího krku sypaný červenou cibulkou a chilli papričkou, houskový knedlík",
+     "price": "185 Kč"
+    },
+    {
+     "text": "PÁ 5.6. – Filírované kuřecí prso s omáčkou z portského vína a sušených švestek na šafránovém rizotu sypaném parmazánem",
+     "price": "189 Kč"
+    },
+    {
+     "text": "PÁ 5.6. – Vykoštěné vepřové uzené koleno, bramborová kaše, okurkový salát",
+     "price": "183 Kč"
+    },
+    {
+     "text": "Kančí výpečky pečené na česneku a divokém koření, bramborový knedlík, špenát",
+     "price": "195 Kč"
+    },
+    {
+     "text": "Indická smažená rýže se zelenými fazolkami, smaženým vejcem a grilovaným tofu",
+     "price": "179 Kč"
+    },
+    {
+     "text": "¼ Pečené kachny, variace houskového a bramborového knedlíku, červené brusinkové zelí",
+     "price": "205 Kč"
+    },
+    {
+     "text": "Hovězí burgr s čedarem, tomatem, nakládanými okurkami, cibulí a pečenou slaninou, pikantní majonéza z dijonské hořčice a šalotky, domácí stejkové hranolky, BBQ omáčka",
+     "price": "195 Kč"
+    },
+    {
+     "text": "Smažený sýr, vařený brambor, domácí tatarská omáčka",
+     "price": "179 Kč"
+    },
+    {
+     "text": "Plněné bramborové knedlíky uzeným masem, zelí, smažená cibulka",
+     "price": "175 Kč"
+    },
+    {
+     "text": "Smažený řízek z vepřové kýty, bramborový salát, citrón",
+     "price": "183 Kč"
+    },
+    {
+     "text": "Směs listových salátů a lístků čerstvého špenátu s rozpečeným hermelínem, nudličkami čerstvé červené řepy a medovo-hořčičným dresinkem, opečený toust",
+     "price": "189 Kč"
+    }
+   ],
+   "time_from": null,
+   "time_to": "15:30",
+   "menu_date": "2026-06-05",
+   "web_confirmed": true,
+   "on_menicka": true,
+   "menicka_url": "https://www.menicka.cz/2367-u-slovanske-lipy.html"
+  },
+  {
+   "id": "web-roma-uno",
+   "name": "Roma Uno",
+   "lat": 50.0794822,
+   "lng": 14.4537419,
+   "source": "web",
+   "website": "https://www.romauno.cz/",
+   "source_url": "https://www.romauno.cz/cs/obedove-menu/",
+   "menu": [
+    {
+     "text": "Tomatová polévka",
+     "price": "49 Kč"
+    },
+    {
+     "text": "Holandský řízek s bramborovou kaší, okurkový salát",
+     "price": "185 Kč"
+    },
+    {
+     "text": "Uzená krkovice, červené zelí, bramborový knedlík",
+     "price": "185 Kč"
+    },
+    {
+     "text": "Gnocchi s lososem, špenátem a česnekem",
+     "price": "179 Kč"
+    },
+    {
+     "text": "Obalovaný hermelín, vařený brambor, tatarská omáčka",
+     "price": "179 Kč"
+    },
+    {
+     "text": "Pizza – pomodoro, sýr, sušená rajčata, parmezán",
+     "price": "165 Kč"
+    }
+   ],
+   "time_from": "11:00",
+   "time_to": "15:00",
+   "menu_date": "2026-06-05",
+   "web_confirmed": true,
+   "on_menicka": true,
+   "menicka_url": "https://www.menicka.cz/2397-roma-uno.html"
+  },
+  {
+   "id": "web-na-krizovatce",
+   "name": "Na Křižovatce",
+   "lat": 50.0779481,
+   "lng": 14.4605819,
+   "source": "web",
+   "website": "http://www.nakrizovatce.com",
+   "source_url": "http://www.nakrizovatce.com/denninabidka.html",
+   "menu": [
+    {
+     "text": "Jihočeská cibulačka s kuřecím masem",
+     "price": "65 Kč"
+    },
+    {
+     "text": "Gulášová",
+     "price": "65 Kč"
+    },
+    {
+     "text": "Hovězí pečeně na houbách, vařená rýže",
+     "price": "162 Kč"
+    },
+    {
+     "text": "Špagety ala Milanese",
+     "price": "137 Kč"
+    },
+    {
+     "text": "Holandský řízek s bramborákem",
+     "price": "143 Kč"
+    },
+    {
+     "text": "Cmunda po Kaplicku",
+     "price": "158 Kč"
+    },
+    {
+     "text": "Kuřecí prsíčka na kari, smažené hranolky",
+     "price": "155 Kč"
+    },
+    {
+     "text": "Smažené žampiony, brambory, tatarská omáčka",
+     "price": "138 Kč"
+    },
+    {
+     "text": "Omeleta se třemi druhy sýrů, vařené brambory",
+     "price": "127 Kč"
+    },
+    {
+     "text": "Palačinky s marmeládou a kysanou smetanou",
+     "price": "115 Kč"
+    },
+    {
+     "text": "Rýžový nákyp s meruňkami",
+     "price": "115 Kč"
+    },
+    {
+     "text": "Mrkvový salátek s ananasem",
+     "price": "55 Kč"
+    },
+    {
+     "text": "Okurkový salátek ve sladkokyselém nálevu",
+     "price": "55 Kč"
+    },
+    {
+     "text": "Rajčatový salátek s cibulkou",
+     "price": "55 Kč"
+    },
+    {
+     "text": "Tzatziki salát",
+     "price": "55 Kč"
+    },
+    {
+     "text": "Coleslaw",
+     "price": "55 Kč"
+    }
+   ],
+   "time_from": "11:00",
+   "time_to": "22:00",
+   "menu_date": "2026-06-05",
+   "web_confirmed": true,
+   "on_menicka": true,
+   "menicka_url": "https://www.menicka.cz/4491-restaurace-na-krizovatce.html"
+  },
+  {
+   "id": "web-u-bohouse",
+   "name": "U Bohouše",
+   "lat": 50.0783281,
+   "lng": 14.4435415,
+   "source": "web",
+   "website": "https://www.restauraceubohouse.cz/",
+   "source_url": "https://www.restauraceubohouse.cz/",
+   "menu": [
+    {
+     "text": "Kuřecí vývar s masem, zeleninou a nudlemi",
+     "price": "49 Kč"
+    },
+    {
+     "text": "Tagliatelle s ragú Bolognese, parmazán",
+     "price": "49 Kč"
+    },
+    {
+     "text": "Tortilla s trhaným vepřovým a čedarem, hranolky, česnekový dip",
+     "price": "239 Kč"
+    },
+    {
+     "text": "Segedínský guláš, houskový knedlík",
+     "price": "169 Kč"
+    },
+    {
+     "text": "Hovězí na rajské, příloha",
+     "price": "179 Kč"
+    },
+    {
+     "text": "Vepřová žebra, bramborový knedlík, zelí",
+     "price": "169 Kč"
+    },
+    {
+     "text": "Domácí sekaná, bramborová kaše, kyselá okurka",
+     "price": "169 Kč"
+    },
+    {
+     "text": "Pikantní kuřecí stripsy, rýže nebo bramboráky",
+     "price": "179 Kč"
+    },
+    {
+     "text": "Smažený řízek (vepřový/kuřecí), vařený brambor, citron",
+     "price": "225 Kč"
+    },
+    {
+     "text": "Smažená Gouda/Hermelín, vařený brambor, tatarská omáčka",
+     "price": "225 Kč"
+    }
+   ],
+   "time_from": null,
+   "time_to": "15:00",
+   "menu_date": "2026-06-05",
+   "web_confirmed": false,
+   "on_menicka": false,
+   "menicka_url": null
+  },
+  {
+   "id": "web-gouranga",
+   "name": "Gouranga",
+   "lat": 50.0842906,
+   "lng": 14.4528538,
+   "source": "web",
+   "website": "https://www.gouranga.cz/",
+   "source_url": "https://www.gouranga.cz/",
+   "menu": [
+    {
+     "text": "Polévka - fazolová se zeleninou",
+     "price": null
+    },
+    {
+     "text": "Hlavní chod - cuketové sabdží s panýrem, paprikou, mrkví a bramborami v jogurtové omáčce",
+     "price": null
+    },
+    {
+     "text": "Příloha - basmati rýže (máslo)",
+     "price": null
+    },
+    {
+     "text": "Chuťovka - malinová halva (lepek, smetana)",
+     "price": null
+    },
+    {
+     "text": "Salát - rajčata, okurky a čínské zelí v zakysané smetaně",
+     "price": null
+    }
+   ],
+   "time_from": "11:15",
+   "time_to": "16:00",
+   "menu_date": "2026-06-05",
+   "web_confirmed": true,
+   "on_menicka": true,
+   "menicka_url": "https://www.menicka.cz/2445-gouranga.html"
+  },
+  {
+   "id": "web-planeta-zizkov",
+   "name": "Planeta Žižkov",
+   "lat": 50.0874807,
+   "lng": 14.4528167,
+   "source": "web",
+   "website": "https://planetazizkov.cz/",
+   "source_url": "https://planetazizkov.cz/",
+   "menu": [
+    {
+     "text": "Drůbeží vývar se zeleninou a nudlemi (0,3 l)",
+     "price": "55 Kč"
+    },
+    {
+     "text": "150 g Vepřová líčka, bramborová kaše",
+     "price": "185 Kč"
+    },
+    {
+     "text": "150 g Kuřecí soté s pórkem, rýže",
+     "price": "189 Kč"
+    },
+    {
+     "text": "150 g Filet z okouna nilského, holandská omáčka, zeleninový salát",
+     "price": "239 Kč"
+    },
+    {
+     "text": "150 g Kuřecí stripsy, česnekový dip, šťouchané brambory",
+     "price": "189 Kč"
+    },
+    {
+     "text": "250 g Letní salát s kousky smaženého hermelínu, brusinkový dresink",
+     "price": "185 Kč"
+    },
+    {
+     "text": "150 g Smažený sýr, tatarka, hranolky nebo vařený brambor",
+     "price": "185 Kč"
+    },
+    {
+     "text": "150 g Hovězí guláš, houskový knedlík",
+     "price": "179 Kč"
+    },
+    {
+     "text": "150 g Hovězí cheeseburger s karamelizovanou cibulkou, hranolky",
+     "price": "199 Kč"
+    }
+   ],
+   "time_from": null,
+   "time_to": null,
+   "menu_date": "2026-06-05",
+   "web_confirmed": true,
+   "on_menicka": true,
+   "menicka_url": "https://www.menicka.cz/4301-planeta-zizkov.html"
+  },
+  {
+   "id": "web-let-s-meat",
+   "name": "Let's Meat!",
+   "lat": 50.0769405,
+   "lng": 14.4614081,
+   "source": "web",
+   "website": "https://www.letsmeat.cz",
+   "source_url": "https://letsmeat.choiceqr.com/section:poledni-menu",
+   "menu": [
+    {
+     "text": "Krém z pečeného česneku s toustovými krutony",
+     "price": "55 Kč"
+    },
+    {
+     "text": "Opečená vinná klobása s čabajkovou omáčkou a mačkanými bramborami s jarní cibulkou",
+     "price": "189 Kč"
+    },
+    {
+     "text": "Lasagne bolognese s malým zeleninovým salátkem s limetkovým dresinkem",
+     "price": "189 Kč"
+    },
+    {
+     "text": "Tortilla de Patatas s trhaným kuřecím masem s bylinkovým jogurtovým dipem a malým salátkem s limetkovým dresinkem",
+     "price": "189 Kč"
+    },
+    {
+     "text": "Smažený sýr gouda s domácí tatarskou omáčkou a vařenými bramborami s pažitkou",
+     "price": "179 Kč"
+    },
+    {
+     "text": "Hovězí smash burger s nakládanou cibulkou, BBQ majonézou, slaninou, čedarem a hranolkami",
+     "price": "229 Kč"
+    },
+    {
+     "text": "SPECIALITA: Opečený filet z lososa s hráškovým pyré s mátou, citronovou solí a máslovou omáčkou s bílým vínem beurre blanc",
+     "price": "279 Kč"
+    },
+    {
+     "text": "DEZERT: Krupicová kaše s vanilkou, máslem a čerstvým lesním ovocem",
+     "price": "169 Kč"
+    }
+   ],
+   "time_from": null,
+   "time_to": null,
+   "menu_date": "2026-06-05",
+   "web_confirmed": true,
+   "on_menicka": true,
+   "menicka_url": "https://www.menicka.cz/7234-lets-meat.html"
+  },
+  {
+   "id": "web-la-farma",
+   "name": "La Farma",
+   "lat": 50.0761123,
+   "lng": 14.4600671,
+   "source": "web",
+   "website": "https://lafarma.cz/",
+   "source_url": "https://lafarma.cz/poledni-menu/",
+   "menu": [
+    {
+     "text": "Zeleninová polévka s nudlemi (1,3,7,9)",
+     "price": "65 Kč"
+    },
+    {
+     "text": "Plněné papriky mletým masem, rajčatová omáčka, jasmínová rýže (9)",
+     "price": "195 Kč"
+    },
+    {
+     "text": "Kuřecí řízek, rajčatový salát s jarní cibulkou, bramborová kaše (1,3,7)",
+     "price": "195 Kč"
+    },
+    {
+     "text": "Tvarohové šišky s jahodami, strouhankou, máslem a tvarohem (1,3,7)",
+     "price": "185 Kč"
+    },
+    {
+     "text": "Domácí špagety s krevetami (1,2,3,7)",
+     "price": "255 Kč"
+    }
+   ],
+   "time_from": null,
+   "time_to": null,
+   "menu_date": "2026-06-05",
+   "web_confirmed": true,
+   "on_menicka": true,
+   "menicka_url": "https://www.menicka.cz/7235-la-farma-restaurant.html"
+  },
+  {
+   "id": "web-bombay-express",
+   "name": "Bombay Express",
+   "lat": 50.0787967,
+   "lng": 14.4614261,
+   "source": "web",
+   "website": "https://www.bombayexpress.cz/",
+   "source_url": "https://bombayexpress.cz/denni-menu/",
+   "menu": [
+    {
+     "text": "Dal Soup (Vegan) – tradiční čočková polévka",
+     "price": "45 Kč"
+    },
+    {
+     "text": "Hot N Sour Chicken Soup – pikantní kuřecí polévka",
+     "price": "55 Kč"
+    },
+    {
+     "text": "Egg Curry – vejce natvrdo v indické omáčce z cibule, rajčat, zázvoru, česneku (s naan / basmati rýží / curry rýží), vegetariánské",
+     "price": "154 Kč"
+    },
+    {
+     "text": "Punjabi Kadhi – cibulové knedlíčky vařené v jogurtové omáčce s indickým kořením (s naan / basmati rýží / curry rýží), vegetariánské",
+     "price": "154 Kč"
+    }
+   ],
+   "time_from": null,
+   "time_to": null,
+   "menu_date": "2026-06-05",
+   "web_confirmed": false,
+   "on_menicka": true,
+   "menicka_url": "https://www.menicka.cz/2455-bombay-express.html"
+  },
+  {
+   "id": "web-pub-and-bar-na-plech",
+   "name": "Pub and Bar Na Plech",
+   "lat": 50.0813437,
+   "lng": 14.4539277,
+   "source": "web",
+   "website": "https://www.pubnaplech.cz",
+   "source_url": "https://www.pubnaplech.cz/menu/",
+   "menu": [
+    {
+     "text": "Páteční hovězí vývar",
+     "price": "49 Kč"
+    },
+    {
+     "text": "Speciality šéfkuchaře „Black“ burger s trhanou kachnou v domácí bulce, červeným zelím na brusinkách, rukolou, pomerančovou majonézou podávané s bramborovým chipsem",
+     "price": "229 Kč"
+    },
+    {
+     "text": "Špagety s masovými koulemi v rajčatové omáčce s bazalkou sypané parmazánem",
+     "price": "169 Kč"
+    },
+    {
+     "text": "Kuřecí kapsa plněná sušeným rajčátkem, mozzarellou a olivovou tapenádou podávané s hranolky a demi-glace omáčkou",
+     "price": "179 Kč"
+    },
+    {
+     "text": "Cmunda po kaplicku – bramborák plněný uzeným a zelím",
+     "price": "169 Kč"
+    },
+    {
+     "text": "„Vege“ Smažený sýr obalovaný v trojobalu podávaný s vařeným pažitkovým bramborem a naší tatarskou omáčkou",
+     "price": "169 Kč"
+    },
+    {
+     "text": "Dezert týdne Jahodový cheesecake ve skle",
+     "price": "59 Kč"
+    }
+   ],
+   "time_from": "11:00",
+   "time_to": "15:00",
+   "menu_date": "2026-06-05",
+   "web_confirmed": true,
+   "on_menicka": true,
+   "menicka_url": "https://www.menicka.cz/7848-pub-na-plech.html"
+  },
+  {
+   "id": "web-kofein-restaurant",
+   "name": "Kofein Restaurant",
+   "lat": 50.0759239,
+   "lng": 14.4501942,
+   "source": "web",
+   "website": "https://ikofein.cz/",
+   "source_url": "https://ikofein.cz/en/lunch",
+   "menu": [
+    {
+     "text": "Goulash soup with beef / Gulášová polévka s hovězím",
+     "price": "250 Kč (menu: polévka + hlavní + nápoj)"
+    },
+    {
+     "text": "Minced meat stuffed bell pepper with sweet tomato sauce and tarhonya / Plněný paprikový lusk s rajskou omáčkou a tarhoňou",
+     "price": "250 Kč"
+    },
+    {
+     "text": "Fish & Chips with tartare sauce",
+     "price": "250 Kč"
+    },
+    {
+     "text": "Chicken wings BBQ with roasted potatoes and coleslaw / Kuřecí křidélka BBQ",
+     "price": "250 Kč"
+    },
+    {
+     "text": "Vegetable curry with sweet potatoes, coconut, cilantro and jasmine rice / Zeleninové karí s batáty",
+     "price": "250 Kč"
+    }
+   ],
+   "time_from": null,
+   "time_to": null,
+   "menu_date": "2026-06-05",
+   "web_confirmed": true,
+   "on_menicka": true,
+   "menicka_url": "https://www.menicka.cz/2431-kofein.html"
+  },
+  {
+   "id": "web-lavicka",
+   "name": "Lavička",
+   "lat": 50.084382,
+   "lng": 14.4514308,
+   "source": "web",
+   "website": "https://www.restaurace-lavicka.cz/",
+   "source_url": "https://www.restaurace-lavicka.cz/",
+   "menu": [
+    {
+     "text": "Bramborový krém s kukuřicí a tortillovými chipsy (300 ml)",
+     "price": "55 Kč"
+    },
+    {
+     "text": "Linguine Bolognese s hovězím ragú, drceným rajčetem, bazalkou a česnekem",
+     "price": "190 Kč"
+    },
+    {
+     "text": "Grilovaný steak z vepřového karé s omáčkou ze světlého piva, žampióny a rýží",
+     "price": "188 Kč"
+    },
+    {
+     "text": "Pečená kuřecí roláda plněná žemlovou nádivkou, brambory, salát",
+     "price": "188 Kč"
+    },
+    {
+     "text": "Smažené mrkvové karbanátky s petrželovými bramborami a dipem",
+     "price": "185 Kč"
+    }
+   ],
+   "time_from": null,
+   "time_to": "15:00",
+   "menu_date": "2026-06-05",
+   "web_confirmed": false,
+   "on_menicka": false,
+   "menicka_url": null
+  },
+  {
+   "id": "web-u-marianskeho-obrazu",
+   "name": "U mariánského obrazu",
+   "lat": 50.0820592,
+   "lng": 14.4495274,
+   "source": "web",
+   "website": "https://www.umarianskehoobrazu.cz/",
+   "source_url": "https://www.umarianskehoobrazu.cz/",
+   "menu": [
+    {
+     "text": "Česneková s opečeným chlebem",
+     "price": "30 Kč"
+    },
+    {
+     "text": "Gulášová",
+     "price": "40 Kč"
+    },
+    {
+     "text": "Anglický roastbeef, opečený brambor, tatarská omáčka",
+     "price": "198 Kč"
+    },
+    {
+     "text": "Kuřecí směs mušketýr, bramboráčky",
+     "price": "177 Kč"
+    },
+    {
+     "text": "Pečená půlka mladé kachny, červené zelí, bramborový knedlík",
+     "price": "199 Kč"
+    },
+    {
+     "text": "Smažená vepřová kotleta, bramborový salát",
+     "price": "188 Kč"
+    },
+    {
+     "text": "Brynzové halušky s vypečenou slaninou",
+     "price": "179 Kč"
+    },
+    {
+     "text": "Steak z vepřového karé s pečenou slaninou a uzeným sýrem",
+     "price": "188 Kč"
+    },
+    {
+     "text": "Smažený vepřový řízek, vařený brambor",
+     "price": "188 Kč"
+    },
+    {
+     "text": "Smažený kuřecí řízek, vařený brambor",
+     "price": "188 Kč"
+    },
+    {
+     "text": "Smažený sýr, restovaný brambor, tatarka",
+     "price": "171 Kč"
+    },
+    {
+     "text": "Smažený hermelín, vařený brambor, tatarka",
+     "price": "171 Kč"
+    },
+    {
+     "text": "Smažená niva, petrželový brambor, tatarka",
+     "price": "171 Kč"
+    },
+    {
+     "text": "Salát z červené řepy s rukolou a feta sýrem",
+     "price": "49 Kč"
+    },
+    {
+     "text": "Californský Lovi salát s grilovanými krevetami",
+     "price": "184 Kč"
+    },
+    {
+     "text": "Kynutý borůvkový knedlík s tvarohem a šlehačkou",
+     "price": "49 Kč"
+    }
+   ],
+   "time_from": null,
+   "time_to": "14:30",
+   "menu_date": "2026-06-05",
+   "web_confirmed": true,
+   "on_menicka": true,
+   "menicka_url": "https://www.menicka.cz/2396-u-marianskeho-obrazu.html"
+  },
+  {
+   "id": "web-u-tri-prasatek",
+   "name": "U Tří prasátek",
+   "lat": 50.0775321,
+   "lng": 14.4586496,
+   "source": "web",
+   "website": "https://www.triprasatka.cz/",
+   "source_url": "https://www.triprasatka.cz/",
+   "menu": [
+    {
+     "text": "Kapustová se slaninou",
+     "price": "55 Kč"
+    },
+    {
+     "text": "Slepičí vývar s masem a nudlemi",
+     "price": "55 Kč"
+    },
+    {
+     "text": "Specialita: Kančí hřbet na grilu s tymiánem a máslem, červené víno, kaštanové pyré, švestky ve slanině, mléčná pěna, opečené brambory grenaille",
+     "price": "295 Kč"
+    },
+    {
+     "text": "150g Španělský ptáček z hovězího ořechu, dušená rýže basmati/houskový knedlík",
+     "price": "199 Kč"
+    },
+    {
+     "text": "200g Smažený květák, vařený brambor, tatarská omáčka",
+     "price": "189 Kč"
+    },
+    {
+     "text": "150g Kuřecí nudličky \"Kung pao\" se zeleninou, dušená rýže basmati",
+     "price": "189 Kč"
+    },
+    {
+     "text": "200g Borůvkový kynutý knedlík s tvarohem, cukrem a šlehačkou, borůvková omáčka",
+     "price": "189 Kč"
+    },
+    {
+     "text": "300g Caesar salát s krevetami, rajčaty a chřestem, krutony, parmazán",
+     "price": "235 Kč"
+    },
+    {
+     "text": "150g Vepřové výpečky, dušené zelí, bramborový knedlík",
+     "price": "195 Kč"
+    },
+    {
+     "text": "150g Smažený vepřový řízek z kotlety, bramborový salát",
+     "price": "195 Kč"
+    },
+    {
+     "text": "250g Caesar salát s kuřecím masem, slaninou, parmazánem a krutony",
+     "price": "215 Kč"
+    },
+    {
+     "text": "500g Vepřová marinovaná žebra v BBQ omáčce (hořčice, křen, chléb)",
+     "price": "265 Kč"
+    },
+    {
+     "text": "150g Kuřecí stripsy s hranolky a česnekovým dipem",
+     "price": "195 Kč"
+    },
+    {
+     "text": "1/4 Kachny pečené na kmíně, červené zelí, bramborové knedlíky",
+     "price": "265 Kč"
+    },
+    {
+     "text": "150g Svíčková na smetaně s brusinkovým terčem, houskový knedlík",
+     "price": "215 Kč"
+    },
+    {
+     "text": "150g Vepřová panenka s pepřovou omáčkou, opečené brambory",
+     "price": "215 Kč"
+    },
+    {
+     "text": "150g Hovězí guláš \"tři prasátka\" s červenou cibulkou, domácí bramboráčky",
+     "price": "215 Kč"
+    },
+    {
+     "text": "130g Smažená gouda, vařené brambory, tatarská omáčka",
+     "price": "185 Kč"
+    },
+    {
+     "text": "300g Kuřecí křídla ve sladko-pálivé omáčce, hranolky, česnekový dip",
+     "price": "229 Kč"
+    }
+   ],
+   "time_from": null,
+   "time_to": "15:00",
+   "menu_date": "2026-06-05",
+   "web_confirmed": true,
+   "on_menicka": true,
+   "menicka_url": "https://www.menicka.cz/7236-restaurace-u-tri-prasatek.html"
+  },
+  {
+   "id": "web-olympos",
+   "name": "Olympos",
+   "lat": 50.0817138,
+   "lng": 14.4468291,
+   "source": "web",
+   "website": "https://www.tavernaolympos.eu/",
+   "source_url": "https://www.tavernaolympos.eu/menu",
+   "menu": [
+    {
+     "text": "Menu 1: 2ks vepřové suvlaki, domácí hranolky, tzatziki",
+     "price": "250 Kč"
+    },
+    {
+     "text": "Menu 2: 180g kuřecí gyros, tzatziki, pita",
+     "price": "250 Kč"
+    },
+    {
+     "text": "Menu 3: Giuvetsi (kuřecí kousky zapečené s těstovinovou rýží)",
+     "price": "250 Kč"
+    },
+    {
+     "text": "Menu 4: 180g kuřecí steak, hummus, rýže",
+     "price": "250 Kč"
+    },
+    {
+     "text": "Menu 5: 2ks hovězí bifteki (mleté maso 200g), fazolový salát, pita",
+     "price": "250 Kč"
+    }
+   ],
+   "time_from": "11:00",
+   "time_to": "14:00",
+   "menu_date": "fixed",
+   "web_confirmed": false,
+   "on_menicka": false,
+   "menicka_url": null
+  }
+ ]
+}

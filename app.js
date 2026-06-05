@@ -68,43 +68,63 @@
     return { min: min, level: level, hasMain: mains.length > 0 };
   }
 
+  function timeStr(r) {
+    if (r.time_from && r.time_to) return r.time_from + "–" + r.time_to;
+    if (r.time_to) return "do " + r.time_to;
+    if (r.time_from) return "od " + r.time_from;
+    return null;
+  }
+  function todayISO() {
+    var d = new Date();
+    return d.getFullYear() + "-" + ("0" + (d.getMonth() + 1)).slice(-2) + "-" + ("0" + d.getDate()).slice(-2);
+  }
+
   function card(r) {
     var pi = priceInfo(r.menu);
-    var rows = (r.menu || [])
+    var isWeb = r.source === "web";
+    var stale = isWeb && r.menu_date_web && r.menu_date_web !== "fixed" && r.menu_date_web !== todayISO();
+    var rows = stale ? "" : (r.menu || [])
       .map(function (d) {
         var name = esc(cleanDish(d.text));
         if (!name) return "";
         var price = d.price ? '<span class="d-price">' + esc(d.price) + "</span>" : "";
-        return (
-          '<div class="dish' + (isSoup(d.text) ? " soup" : "") + '">' +
-          '<span class="d-name">' + name + "</span>" + price + "</div>"
-        );
+        return '<div class="dish' + (isSoup(d.text) ? " soup" : "") +
+               '"><span class="d-name">' + name + "</span>" + price + "</div>";
       })
       .filter(Boolean)
       .join("");
-    var badge = pi.hasMain
-      ? '<span class="tip-badge">od ' + pi.min + " Kč</span>"
-      : "";
+    var menuHtml = stale
+      ? '<div class="tip-empty">Dnešní menu je na <a href="' + esc(r.website || r.url) +
+        '" target="_blank" rel="noopener">webu restaurace ↗</a></div>'
+      : (rows || '<span class="tip-empty">Dnes bez zveřejněného menu</span>');
+    var t = timeStr(r);
+    var timeLine = t ? '<div class="tip-time">🕚 ' + esc(t) + "</div>" : "";
+    var badge = pi.hasMain ? '<span class="tip-badge">od ' + pi.min + " Kč</span>" : "";
+    var chips = isWeb
+      ? '<span class="pill src-web">🌐 web restaurace</span>'
+      : (r.web_confirmed
+          ? '<span class="pill src-men">menicka</span><span class="pill src-ok">✓ ověřeno z webu</span>'
+          : '<span class="pill src-men">menicka</span>');
+    var linkUrl = isWeb ? (r.website || r.source_url || r.url) : r.url;
+    var linkLabel = isWeb ? "web ↗" : "menicka.cz ↗";
     return (
       '<div class="menu-tip">' +
-        '<div class="tip-head">' +
-          badge +
+        '<div class="tip-head">' + badge +
           '<div class="tip-name">' + esc(r.name) + "</div>" +
           (r.address ? '<div class="tip-addr">' + esc(r.address) + "</div>" : "") +
+          timeLine +
         "</div>" +
-        '<div class="tip-menu">' +
-          (rows || '<span class="tip-empty">Dnes bez zveřejněného menu</span>') +
-        "</div>" +
-        '<div class="tip-foot"><span class="pill">' + esc(districtLabel(r.district)) + "</span>" +
-          '<a href="' + esc(r.url) + '" target="_blank" rel="noopener">menicka.cz ↗</a></div>' +
+        '<div class="tip-menu">' + menuHtml + "</div>" +
+        '<div class="tip-foot"><span class="chips">' + chips + "</span>" +
+          '<a href="' + esc(linkUrl || "#") + '" target="_blank" rel="noopener">' + linkLabel + "</a></div>" +
       "</div>"
     );
   }
 
-  function makeIcon(level) {
+  function makeIcon(level, isWeb) {
     return L.divIcon({
       className: "",
-      html: '<div class="pin lvl-' + level + '"><span>🍴</span></div>',
+      html: '<div class="pin lvl-' + level + (isWeb ? " web" : "") + '"><span>🍴</span></div>',
       iconSize: [34, 34],
       iconAnchor: [17, 33],
       popupAnchor: [0, -30],
@@ -139,7 +159,7 @@
     list.forEach(function (r) {
       if (typeof r.lat !== "number" || typeof r.lng !== "number") return;
       var pi = priceInfo(r.menu);
-      var m = L.marker([r.lat, r.lng], { icon: makeIcon(pi.level), title: r.name });
+      var m = L.marker([r.lat, r.lng], { icon: makeIcon(pi.level, r.source === "web"), title: r.name });
       var html = card(r);
       m.bindTooltip(html, {
         direction: "top",
