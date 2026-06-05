@@ -1,0 +1,18 @@
+{
+  "_comment": "Ruční opravy: správné weby / URL poledního menu pro restaurace, kde OSM má špatné/mrtvé URL nebo kde auto-detekce selže. Klíč = název (porovnává se normalizovaně). platform: choiceqr | generic | menicka.",
+  "Plzeňka Olše": {
+    "website": "https://plzenkaolse.cz",
+    "menu_url": "https://plzenkaolse.cz/denni-menu",
+    "platform": "generic"
+  },
+  "Nominanza": {
+    "website": "https://nominanza.com",
+    "menu_url": "https://nominanza.com/index-zizkov.html",
+    "platform": "generic"
+  },
+  "Chilli and Lime": {
+    "website": "https://chilliandlime.choiceqr.com",
+    "menu_url": "https://chilliandlime.choiceqr.com/section:poledni-menu",
+    "platform": "choiceqr"
+  }
+}

@@ -19,6 +19,25 @@ import os
 import time
 from concurrent.futures import ThreadPoolExecutor
 from datetime import datetime, timezone
+import unicodedata
+
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+try:
+    from sources import scrape_choiceqr
+except Exception:  # noqa: BLE001
+    def scrape_choiceqr(_u):
+        return None
+
+
+def _norm(s):
+    s = unicodedata.normalize("NFKD", s or "").encode("ascii", "ignore").decode().lower()
+    s = s.replace("&", " ").replace(" and ", " ")
+    return re.sub(r"[^a-z0-9]+", "", s)
+
+
+def _today_iso():
+    d = datetime.now()
+    return f"{d.year}-{d.month:02d}-{d.day:02d}"
 
 BASE = "https://www.menicka.cz"
 DISTRICTS = [f"praha-{i}" for i in range(1, 11)]
@@ -130,53 +149,74 @@ def load_json(path, default):
     return default
 
 
-def merge_extra(feats):
-    """Slouci menicka feats s kuratorovanou vrstvou data/extra.json (vlastni weby restauraci).
-    - shoda s menicka zaznamem -> obohati o cas podavani + web_confirmed + odkaz na web
-    - nova restaurace (neni na menicce) -> prida jako source='web' s date-guardem (menu_date_web)
+def merge_zone(feats):
+    """Sjednotí menicka base + zónový adresář (directory.json) + kurátorovanou vrstvu (extra.json).
+    Každý feat dostane menu_status: 'scraped' (máme menu) | 'link' (jen odkaz na web menu) | 'none'.
+    - menicka záznam: scraped; pokud je v zóně a v extra → obohatí čas/odkaz/ověřeno.
+    - zónová restaurace mimo menicku: choiceqr → scrape; jinak odkaz na menu/web; bez webu → none.
     """
-    extra = load_json(os.path.join(DATA, "extra.json"), {})
-    rows = extra.get("restaurants", []) if isinstance(extra, dict) else []
-    if not rows:
-        return feats
+    directory = load_json(os.path.join(DATA, "directory.json"), {}).get("restaurants", [])
+    extra = load_json(os.path.join(DATA, "extra.json"), {}).get("restaurants", [])
+    extra_by = {_norm(e["name"]): e for e in extra}
     by_url = {f.get("url"): f for f in feats}
+    today = _today_iso()
 
-    def near(lat, lng):
-        best, bd = None, 1e9
-        for f in feats:
-            if f["lat"] is None:
-                continue
-            d = (f["lat"] - lat) ** 2 + (f["lng"] - lng) ** 2
-            if d < bd:
-                bd, best = d, f
-        return best if bd < (0.0009 ** 2) else None  # ~100 m
+    for f in feats:
+        f.setdefault("menu_status", "scraped")
+        f.setdefault("menu_url", None)
+        f.setdefault("platform", "menicka")
+        f.setdefault("zone", False)
 
-    added = enriched = 0
-    for e in rows:
-        tgt = by_url.get(e.get("menicka_url")) if e.get("menicka_url") else None
-        if tgt is None and e.get("on_menicka"):
-            tgt = near(e["lat"], e["lng"])
-        if tgt is not None:
-            if e.get("time_from"):
-                tgt["time_from"] = e["time_from"]
-            if e.get("time_to"):
-                tgt["time_to"] = e["time_to"]
-            tgt["web_confirmed"] = bool(e.get("web_confirmed"))
-            tgt["website"] = e.get("website")
-            tgt["source_url"] = e.get("source_url")
-            enriched += 1
-        else:
-            feats.append({
-                "id": e["id"], "name": e["name"], "district": None,
-                "address": None, "lat": e["lat"], "lng": e["lng"],
-                "url": e.get("source_url") or e.get("website"),
-                "menu": e.get("menu", []),
-                "source": "web", "time_from": e.get("time_from"), "time_to": e.get("time_to"),
-                "web_confirmed": True, "website": e.get("website"),
-                "source_url": e.get("source_url"), "menu_date_web": e.get("menu_date"),
-            })
-            added += 1
-    print(f"  merge extra.json: obohaceno {enriched} menicka zaznamu, pridano {added} novych (web)")
+    added = scraped = linked = none_ = 0
+    for d in directory:
+        e = extra_by.get(_norm(d["name"]))
+        if d.get("on_menicka"):
+            tgt = by_url.get(d.get("menicka_url"))
+            if tgt:
+                tgt["zone"] = True
+                if e:
+                    if e.get("time_from"):
+                        tgt["time_from"] = e["time_from"]
+                    if e.get("time_to"):
+                        tgt["time_to"] = e["time_to"]
+                    tgt["web_confirmed"] = bool(e.get("web_confirmed"))
+                    tgt["website"] = e.get("website") or tgt.get("website")
+            continue
+
+        menu, status = [], "none"
+        menu_url = d.get("menu_url") or d.get("website")
+        tfrom = tto = None
+        web_conf = False
+        if e and e.get("menu") and e.get("menu_date") in (today, "fixed"):
+            menu, status = e["menu"], "scraped"
+            tfrom, tto = e.get("time_from"), e.get("time_to")
+            menu_url = e.get("source_url") or menu_url
+            web_conf = True
+        elif d.get("platform") == "choiceqr" and d.get("menu_url"):
+            m = scrape_choiceqr(d["menu_url"])
+            if m:
+                menu, status = m, "scraped"
+            else:
+                status = "link"
+        elif menu_url:
+            status = "link"
+
+        scraped += status == "scraped"
+        linked += status == "link"
+        none_ += status == "none"
+        feats.append({
+            "id": "z-" + _norm(d["name"])[:22] + "-" + str(round(d["lat"], 4)),
+            "name": d["name"], "district": None, "address": None,
+            "lat": d["lat"], "lng": d["lng"],
+            "url": menu_url or d.get("website"),
+            "menu": menu, "menu_status": status, "menu_url": menu_url,
+            "platform": d.get("platform"), "source": "web", "zone": True,
+            "time_from": tfrom, "time_to": tto, "web_confirmed": web_conf,
+            "website": d.get("website"), "source_url": menu_url,
+            "menu_date_web": (e.get("menu_date") if e else None),
+        })
+        added += 1
+    print(f"  merge zone: +{added} zonovych (scraped {scraped}, odkaz {linked}, none {none_})")
     return feats
 
 
@@ -241,7 +281,7 @@ def main():
             "web_confirmed": False, "website": None, "source_url": None,
         })
 
-    feats = merge_extra(feats)
+    feats = merge_zone(feats)
 
     if menu_date is None:
         now_local = datetime.now()

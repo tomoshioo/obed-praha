@@ -79,11 +79,8 @@
     return d.getFullYear() + "-" + ("0" + (d.getMonth() + 1)).slice(-2) + "-" + ("0" + d.getDate()).slice(-2);
   }
 
-  function card(r) {
-    var pi = priceInfo(r.menu);
-    var isWeb = r.source === "web";
-    var stale = isWeb && r.menu_date_web && r.menu_date_web !== "fixed" && r.menu_date_web !== todayISO();
-    var rows = stale ? "" : (r.menu || [])
+  function dishRows(menu) {
+    return (menu || [])
       .map(function (d) {
         var name = esc(cleanDish(d.text));
         if (!name) return "";
@@ -93,30 +90,51 @@
       })
       .filter(Boolean)
       .join("");
-    var menuHtml = stale
-      ? '<div class="tip-empty">Dnešní menu je na <a href="' + esc(r.website || r.url) +
-        '" target="_blank" rel="noopener">webu restaurace ↗</a></div>'
-      : (rows || '<span class="tip-empty">Dnes bez zveřejněného menu</span>');
+  }
+
+  function card(r) {
+    var status = r.menu_status || "scraped";
+    var pi = priceInfo(r.menu);
+    var isWeb = r.source === "web";
     var t = timeStr(r);
     var timeLine = t ? '<div class="tip-time">🕚 ' + esc(t) + "</div>" : "";
-    var badge = pi.hasMain ? '<span class="tip-badge">od ' + pi.min + " Kč</span>" : "";
+    var badge = (status === "scraped" && pi.hasMain) ? '<span class="tip-badge">od ' + pi.min + " Kč</span>" : "";
+
+    var body, linkUrl, linkLabel;
+    if (status === "link") {
+      body = '<div class="tip-cta"><a class="cta" href="' + esc(r.menu_url || r.website || "#") +
+             '" target="_blank" rel="noopener">📋 Zobrazit dnešní polední menu ↗</a></div>';
+      linkUrl = r.website || r.menu_url; linkLabel = "web restaurace ↗";
+    } else if (status === "none") {
+      body = '<div class="tip-empty">Online polední menu jsme zatím nenašli.</div>';
+      linkUrl = r.website || null; linkLabel = "web ↗";
+    } else {
+      var stale = isWeb && r.menu_date_web && r.menu_date_web !== "fixed" && r.menu_date_web !== todayISO();
+      body = stale
+        ? '<div class="tip-cta"><a class="cta" href="' + esc(r.menu_url || r.website || "#") +
+          '" target="_blank" rel="noopener">📋 Dnešní menu na webu ↗</a></div>'
+        : (dishRows(r.menu) || '<span class="tip-empty">Dnes bez zveřejněného menu</span>');
+      linkUrl = isWeb ? (r.menu_url || r.website || r.url) : r.url;
+      linkLabel = isWeb ? "web ↗" : "menicka.cz ↗";
+    }
+
     var chips = isWeb
-      ? '<span class="pill src-web">🌐 web restaurace</span>'
+      ? '<span class="pill src-web">🌐 web restaurace</span>' +
+        (r.web_confirmed ? '<span class="pill src-ok">✓ ověřeno</span>' : "")
       : (r.web_confirmed
           ? '<span class="pill src-men">menicka</span><span class="pill src-ok">✓ ověřeno z webu</span>'
           : '<span class="pill src-men">menicka</span>');
-    var linkUrl = isWeb ? (r.website || r.source_url || r.url) : r.url;
-    var linkLabel = isWeb ? "web ↗" : "menicka.cz ↗";
+    var foot = '<div class="tip-foot"><span class="chips">' + chips + "</span>" +
+      (linkUrl ? '<a href="' + esc(linkUrl) + '" target="_blank" rel="noopener">' + linkLabel + "</a>" : "") + "</div>";
+
     return (
       '<div class="menu-tip">' +
-        '<div class="tip-head">' + badge +
+        '<div class="tip-head' + (status !== "scraped" ? " mini" : "") + '">' + badge +
           '<div class="tip-name">' + esc(r.name) + "</div>" +
           (r.address ? '<div class="tip-addr">' + esc(r.address) + "</div>" : "") +
           timeLine +
         "</div>" +
-        '<div class="tip-menu">' + menuHtml + "</div>" +
-        '<div class="tip-foot"><span class="chips">' + chips + "</span>" +
-          '<a href="' + esc(linkUrl || "#") + '" target="_blank" rel="noopener">' + linkLabel + "</a></div>" +
+        '<div class="tip-menu">' + body + "</div>" + foot +
       "</div>"
     );
   }
@@ -150,16 +168,20 @@
   /* ---------- init ---------- */
   function init(data) {
     var list = (data && data.restaurants) || [];
+    var scN = 0;
+    list.forEach(function (r) { if ((r.menu_status || "scraped") === "scraped") scN++; });
     $("meta").textContent =
-      list.length + " restaurací · menu " + (data.menu_date || "dnes");
+      list.length + " podniků · " + scN + " s menu · " + (data.menu_date || "dnes");
     document.title =
       "Oběd na mapě (" + list.length + " restaurací) – polední menu v Praze";
 
     var markers = [];
     list.forEach(function (r) {
       if (typeof r.lat !== "number" || typeof r.lng !== "number") return;
+      var status = r.menu_status || "scraped";
       var pi = priceInfo(r.menu);
-      var m = L.marker([r.lat, r.lng], { icon: makeIcon(pi.level, r.source === "web"), title: r.name });
+      var level = status === "scraped" ? pi.level : status;
+      var m = L.marker([r.lat, r.lng], { icon: makeIcon(level, r.source === "web" && status === "scraped"), title: r.name });
       var html = card(r);
       m.bindTooltip(html, {
         direction: "top",
