@@ -3,8 +3,8 @@ name: Refresh polední menu
 on:
   schedule:
     # GitHub cron je v UTC. Praha = UTC+2 (léto) / UTC+1 (zima).
-    - cron: "20 6 * * 1-5"   # ~08:20 ráno (CEST) – po–pá
-    - cron: "30 8 * * 1-5"   # ~10:30 dopoledne (CEST) – pojistka
+    # 08:00 UTC = 10:00 CEST (léto) / 09:00 CET (zima). Cíl: každý den v 10:00.
+    - cron: "0 8 * * *"
   workflow_dispatch: {}
 
 permissions:
@@ -24,7 +24,13 @@ jobs:
         with:
           python-version: "3.12"
 
-      - name: Stáhnout dnešní polední menu z menicka.cz
+      - name: Stáhnout dnešní polední menu (menicka + choiceqr + volitelně LLM)
+        env:
+          # Volitelné: nastav v repo Settings → Secrets pro LLM extrakci z heterogenních webů.
+          # Funguje bez nich (jen menicka + choiceqr); s klíčem se stahuje i dlouhý ocas.
+          OBED_LLM_KEY: ${{ secrets.OBED_LLM_KEY }}
+          OBED_LLM_URL: ${{ secrets.OBED_LLM_URL }}
+          OBED_LLM_MODEL: ${{ secrets.OBED_LLM_MODEL }}
         run: python scripts/scrape.py
 
       - name: Commitnout aktualizovaná data

@@ -137,10 +137,10 @@
    "d_byt": 119,
    "on_menicka": false,
    "menicka_url": null,
-   "website": "https://dottir.com",
-   "menu_url": "https://dottir.com",
-   "platform": "web",
-   "resolved_by": "slug-guess"
+   "website": null,
+   "menu_url": null,
+   "platform": "none",
+   "resolved_by": null
   },
   {
    "name": "Knajpička",
@@ -165,10 +165,10 @@
    "d_byt": 124,
    "on_menicka": false,
    "menicka_url": null,
-   "website": "https://ragazzi.com",
-   "menu_url": "https://ragazzi.com",
-   "platform": "web",
-   "resolved_by": "slug-guess"
+   "website": "https://www.ragazzipizzabar.com",
+   "menu_url": null,
+   "platform": "none",
+   "resolved_by": null
   },
   {
    "name": "Anmy's Sushi Bar",
@@ -207,10 +207,10 @@
    "d_byt": 813,
    "on_menicka": false,
    "menicka_url": null,
-   "website": "https://etcorner.com",
-   "menu_url": "https://etcorner.com",
-   "platform": "web",
-   "resolved_by": "slug-guess"
+   "website": null,
+   "menu_url": null,
+   "platform": "none",
+   "resolved_by": null
   },
   {
    "name": "Sumi Garden",
@@ -333,10 +333,10 @@
    "d_byt": 176,
    "on_menicka": false,
    "menicka_url": null,
-   "website": "https://ilcapitano.com",
-   "menu_url": "https://ilcapitano.com",
-   "platform": "web",
-   "resolved_by": "slug-guess"
+   "website": null,
+   "menu_url": null,
+   "platform": "none",
+   "resolved_by": null
   },
   {
    "name": "Pho Vietnam Tuan & Lan",
@@ -501,10 +501,10 @@
    "d_byt": 209,
    "on_menicka": true,
    "menicka_url": "https://www.menicka.cz/3852-u-ruzoveho-sadu.html",
-   "website": "https://uruzovehosadu.cz",
-   "menu_url": "https://uruzovehosadu.cz",
+   "website": null,
+   "menu_url": null,
    "platform": "menicka",
-   "resolved_by": "slug-guess"
+   "resolved_by": null
   },
   {
    "name": "Základna",
@@ -571,10 +571,10 @@
    "d_byt": 695,
    "on_menicka": false,
    "menicka_url": null,
-   "website": "https://mailsi.cz",
-   "menu_url": "https://mailsi.cz",
-   "platform": "web",
-   "resolved_by": "slug-guess"
+   "website": null,
+   "menu_url": null,
+   "platform": "none",
+   "resolved_by": null
   },
   {
    "name": "Pelmeňárna na Jiřáku",
@@ -613,10 +613,10 @@
    "d_byt": 742,
    "on_menicka": false,
    "menicka_url": null,
-   "website": "https://bibimbap.com",
-   "menu_url": "https://bibimbap.com",
-   "platform": "web",
-   "resolved_by": "slug-guess"
+   "website": "https://www.bibimbap.cz/",
+   "menu_url": null,
+   "platform": "none",
+   "resolved_by": null
   },
   {
    "name": "Taiwan Restaurant PRAHA",
@@ -683,10 +683,10 @@
    "d_byt": 722,
    "on_menicka": false,
    "menicka_url": null,
-   "website": "https://royalkebabhouse.com",
-   "menu_url": "https://royalkebabhouse.com",
-   "platform": "web",
-   "resolved_by": "slug-guess"
+   "website": null,
+   "menu_url": null,
+   "platform": "none",
+   "resolved_by": null
   },
   {
    "name": "U Sadu",
@@ -767,10 +767,10 @@
    "d_byt": 291,
    "on_menicka": false,
    "menicka_url": null,
-   "website": "https://enoteca.com",
-   "menu_url": "https://enoteca.com",
-   "platform": "web",
-   "resolved_by": "slug-guess"
+   "website": null,
+   "menu_url": null,
+   "platform": "none",
+   "resolved_by": null
   },
   {
    "name": "Pizza di Praga",
@@ -809,10 +809,10 @@
    "d_byt": 302,
    "on_menicka": false,
    "menicka_url": null,
-   "website": "https://ceskakuchyne.cz",
-   "menu_url": "https://ceskakuchyne.cz",
-   "platform": "web",
-   "resolved_by": "slug-guess"
+   "website": null,
+   "menu_url": null,
+   "platform": "none",
+   "resolved_by": null
   },
   {
    "name": "Thien Long 1",
@@ -1089,10 +1089,10 @@
    "d_byt": 358,
    "on_menicka": false,
    "menicka_url": null,
-   "website": "https://www.kopyto.cz/",
-   "menu_url": "https://www.kopyto.cz/",
-   "platform": "web",
-   "resolved_by": "osm"
+   "website": null,
+   "menu_url": null,
+   "platform": "none",
+   "resolved_by": null
   },
   {
    "name": "Pivoteka ŽižkOFF",
@@ -1201,10 +1201,10 @@
    "d_byt": 391,
    "on_menicka": false,
    "menicka_url": null,
-   "website": "https://miminoo.com",
-   "menu_url": "https://miminoo.com",
-   "platform": "web",
-   "resolved_by": "slug-guess"
+   "website": "http://towerpark.cz/miminoo-garden-restaurant+11",
+   "menu_url": null,
+   "platform": "none",
+   "resolved_by": null
   },
   {
    "name": "Království",
@@ -1215,10 +1215,10 @@
    "d_byt": 498,
    "on_menicka": false,
    "menicka_url": null,
-   "website": "https://kralovstvi.cz",
-   "menu_url": "https://kralovstvi.cz",
-   "platform": "web",
-   "resolved_by": "slug-guess"
+   "website": null,
+   "menu_url": null,
+   "platform": "none",
+   "resolved_by": null
   },
   {
    "name": "French Tacos",
@@ -1271,10 +1271,10 @@
    "d_byt": 963,
    "on_menicka": false,
    "menicka_url": null,
-   "website": "https://www.guston.cz/",
-   "menu_url": "https://www.guston.cz/",
-   "platform": "web",
-   "resolved_by": "osm"
+   "website": null,
+   "menu_url": null,
+   "platform": "none",
+   "resolved_by": null
   },
   {
    "name": "The Down Under",
@@ -1411,10 +1411,10 @@
    "d_byt": 412,
    "on_menicka": false,
    "menicka_url": null,
-   "website": "https://oblaca.cz",
-   "menu_url": "https://oblaca.cz",
-   "platform": "web",
-   "resolved_by": "slug-guess"
+   "website": "https://www.towerpark.cz/oblaca-restaurant/",
+   "menu_url": null,
+   "platform": "none",
+   "resolved_by": null
   },
   {
    "name": "Chilli & lime",
@@ -1607,10 +1607,10 @@
    "d_byt": 435,
    "on_menicka": false,
    "menicka_url": null,
-   "website": "https://shromazdiste.cz",
-   "menu_url": "https://shromazdiste.cz",
-   "platform": "web",
-   "resolved_by": "slug-guess"
+   "website": "https://shromazdiste.business.site/",
+   "menu_url": null,
+   "platform": "none",
+   "resolved_by": null
   },
   {
    "name": "Lumbini",
@@ -1621,10 +1621,10 @@
    "d_byt": 1233,
    "on_menicka": false,
    "menicka_url": null,
-   "website": "https://lumbini.com",
-   "menu_url": "https://lumbini.com",
-   "platform": "web",
-   "resolved_by": "slug-guess"
+   "website": null,
+   "menu_url": null,
+   "platform": "none",
+   "resolved_by": null
   },
   {
    "name": "Creperie Mirakulum",
@@ -1649,10 +1649,10 @@
    "d_byt": 442,
    "on_menicka": false,
    "menicka_url": null,
-   "website": "https://blackgarden.cz",
-   "menu_url": "https://blackgarden.cz",
-   "platform": "web",
-   "resolved_by": "slug-guess"
+   "website": null,
+   "menu_url": null,
+   "platform": "none",
+   "resolved_by": null
   },
   {
    "name": "Porke",
@@ -1705,10 +1705,10 @@
    "d_byt": 916,
    "on_menicka": true,
    "menicka_url": "https://www.menicka.cz/7872-bistro-empras.html",
-   "website": "https://empras.cz",
-   "menu_url": "https://empras.cz",
+   "website": "http://www.empras.wz.cz/",
+   "menu_url": null,
    "platform": "menicka",
-   "resolved_by": "slug-guess"
+   "resolved_by": null
   },
   {
    "name": "Devět mraků",
@@ -1775,10 +1775,10 @@
    "d_byt": 455,
    "on_menicka": false,
    "menicka_url": null,
-   "website": "https://hospudkanadviktorkou.cz",
-   "menu_url": "https://hospudkanadviktorkou.cz",
-   "platform": "web",
-   "resolved_by": "slug-guess"
+   "website": "https://www.nadviktorkou.cz/",
+   "menu_url": null,
+   "platform": "none",
+   "resolved_by": null
   },
   {
    "name": "SOU100",
@@ -1789,10 +1789,10 @@
    "d_byt": 748,
    "on_menicka": false,
    "menicka_url": null,
-   "website": "https://sou100.com",
-   "menu_url": "https://sou100.com",
-   "platform": "web",
-   "resolved_by": "slug-guess"
+   "website": null,
+   "menu_url": null,
+   "platform": "none",
+   "resolved_by": null
   },
   {
    "name": "Automat Matuška JZP",
@@ -2013,10 +2013,10 @@
    "d_byt": 655,
    "on_menicka": false,
    "menicka_url": null,
-   "website": "https://kiin.cz",
-   "menu_url": "https://kiin.cz",
-   "platform": "web",
-   "resolved_by": "slug-guess"
+   "website": "www.kiin.cz",
+   "menu_url": null,
+   "platform": "none",
+   "resolved_by": null
   },
   {
    "name": "El Camino",
@@ -2069,10 +2069,10 @@
    "d_byt": 491,
    "on_menicka": false,
    "menicka_url": null,
-   "website": "https://phofamily.com",
-   "menu_url": "https://phofamily.com",
-   "platform": "web",
-   "resolved_by": "slug-guess"
+   "website": null,
+   "menu_url": null,
+   "platform": "none",
+   "resolved_by": null
   },
   {
    "name": "Pohoda",
@@ -2153,10 +2153,10 @@
    "d_byt": 528,
    "on_menicka": false,
    "menicka_url": null,
-   "website": "https://chibimochi.com",
-   "menu_url": "https://chibimochi.com",
-   "platform": "web",
-   "resolved_by": "slug-guess"
+   "website": null,
+   "menu_url": null,
+   "platform": "none",
+   "resolved_by": null
   },
   {
    "name": "Danu Restaurant & Wine Cellar",
@@ -2195,10 +2195,10 @@
    "d_byt": 929,
    "on_menicka": false,
    "menicka_url": null,
-   "website": "https://vegancity.cz",
-   "menu_url": "https://vegancity.cz",
-   "platform": "web",
-   "resolved_by": "slug-guess"
+   "website": null,
+   "menu_url": null,
+   "platform": "none",
+   "resolved_by": null
   },
   {
    "name": "Soul Kitchen",
@@ -2223,10 +2223,10 @@
    "d_byt": 535,
    "on_menicka": false,
    "menicka_url": null,
-   "website": "https://huongsen.com",
-   "menu_url": "https://huongsen.com",
-   "platform": "web",
-   "resolved_by": "slug-guess"
+   "website": null,
+   "menu_url": null,
+   "platform": "none",
+   "resolved_by": null
   },
   {
    "name": "Highland Steak House",
@@ -2377,10 +2377,10 @@
    "d_byt": 587,
    "on_menicka": false,
    "menicka_url": null,
-   "website": "https://kohoutek.com",
-   "menu_url": "https://kohoutek.com",
-   "platform": "web",
-   "resolved_by": "slug-guess"
+   "website": null,
+   "menu_url": null,
+   "platform": "none",
+   "resolved_by": null
   },
   {
    "name": "Bernard BREWHOUSE",
@@ -2461,10 +2461,10 @@
    "d_byt": 598,
    "on_menicka": false,
    "menicka_url": null,
-   "website": "https://nola.com",
-   "menu_url": "https://nola.com",
-   "platform": "web",
-   "resolved_by": "slug-guess"
+   "website": "https://www.nolabistro.cz/",
+   "menu_url": null,
+   "platform": "none",
+   "resolved_by": null
   },
   {
    "name": "Pivovar Victor",
@@ -2545,10 +2545,10 @@
    "d_byt": 627,
    "on_menicka": false,
    "menicka_url": null,
-   "website": "https://hanoi.com",
-   "menu_url": "https://hanoi.com",
-   "platform": "web",
-   "resolved_by": "slug-guess"
+   "website": null,
+   "menu_url": null,
+   "platform": "none",
+   "resolved_by": null
   },
   {
    "name": "Sonora",
@@ -2559,10 +2559,10 @@
    "d_byt": 761,
    "on_menicka": false,
    "menicka_url": null,
-   "website": "https://sonora.com",
-   "menu_url": "https://sonora.com",
-   "platform": "web",
-   "resolved_by": "slug-guess"
+   "website": null,
+   "menu_url": null,
+   "platform": "none",
+   "resolved_by": null
   },
   {
    "name": "Sklep Restaurant",
@@ -2671,10 +2671,10 @@
    "d_byt": 1066,
    "on_menicka": false,
    "menicka_url": null,
-   "website": "https://pokefun.cz",
-   "menu_url": "https://pokefun.cz",
-   "platform": "web",
-   "resolved_by": "slug-guess"
+   "website": null,
+   "menu_url": null,
+   "platform": "none",
+   "resolved_by": null
   },
   {
    "name": "Ginza Running Sushi",
@@ -2727,10 +2727,10 @@
    "d_byt": 691,
    "on_menicka": false,
    "menicka_url": null,
-   "website": "https://samosebou.cz",
-   "menu_url": "https://samosebou.cz",
-   "platform": "web",
-   "resolved_by": "slug-guess"
+   "website": null,
+   "menu_url": null,
+   "platform": "none",
+   "resolved_by": null
   },
   {
    "name": "Čínské bistro",
@@ -2797,10 +2797,10 @@
    "d_byt": 706,
    "on_menicka": false,
    "menicka_url": null,
-   "website": "https://queenskebab.com",
-   "menu_url": "https://queenskebab.com",
-   "platform": "web",
-   "resolved_by": "slug-guess"
+   "website": null,
+   "menu_url": null,
+   "platform": "none",
+   "resolved_by": null
   },
   {
    "name": "Ugova Salaterie",
@@ -3091,10 +3091,10 @@
    "d_byt": 952,
    "on_menicka": false,
    "menicka_url": null,
-   "website": "https://oasisprague.com",
-   "menu_url": "https://oasisprague.com",
-   "platform": "web",
-   "resolved_by": "slug-guess"
+   "website": null,
+   "menu_url": null,
+   "platform": "none",
+   "resolved_by": null
   },
   {
    "name": "Green Tea restaurant",
@@ -3119,10 +3119,10 @@
    "d_byt": 780,
    "on_menicka": false,
    "menicka_url": null,
-   "website": "https://mrbanhmi.com",
-   "menu_url": "https://mrbanhmi.com",
-   "platform": "web",
-   "resolved_by": "slug-guess"
+   "website": null,
+   "menu_url": null,
+   "platform": "none",
+   "resolved_by": null
   },
   {
    "name": "Domácí těstoviny",
@@ -3217,8 +3217,8 @@
    "d_byt": 883,
    "on_menicka": false,
    "menicka_url": null,
-   "website": "https://capheco.com",
-   "menu_url": "https://capheco.com",
+   "website": "https://ca-phe-co.cz",
+   "menu_url": "https://ca-phe-co.cz",
    "platform": "web",
    "resolved_by": "slug-guess"
   },

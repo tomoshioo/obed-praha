@@ -45,6 +45,27 @@ def name_present(html, name):
     return bool(n) and n in norm(re.sub(r"<[^>]+>", " ", html or ""))[:30000]
 
 
+_PARKED = re.compile(
+    r"(dom[ée]na?[^<]{0,30}na prodej|this domain (is )?for sale|buy this domain|"
+    r"koupit dom[ée]nu|je na prodej|sedoparking|domain[- ]?parking|parkov[aá]n[oa]|"
+    r"forsale|domain for sale|w[eé]b[^<]{0,20}p[řr]ipravujeme)", re.I)
+
+
+def is_parked(html):
+    if not html or len(html) < 400:
+        return True
+    return bool(_PARKED.search(html[:6000]))
+
+
+_FOOD = re.compile(
+    r"(restaurac|menu|j[íi]deln|kuchyn|poledn|ob[ěe]d|pizza|rezervac|restaurant|"
+    r"lunch|kitchen|n[áa]poj|pivo|bistro|k[áa]v[ae]|jídl|burger|sushi|ku[řr]e)", re.I)
+
+
+def looks_restaurant(html):
+    return bool(_FOOD.search(re.sub(r"<[^>]+>", " ", html or "")[:9000]))
+
+
 def resolve(r, overrides):
     name = r["name"]
     ov = overrides.get(norm(name))
@@ -56,10 +77,12 @@ def resolve(r, overrides):
 
     html = fetch(website) if website else None
     by = "osm" if html else None
-    if not html:  # OSM web mrtvý/chybí → slug-guess
+    if html and is_parked(html):            # OSM web parkovaný / mrtvý → zahodit
+        html, website, by = None, None, None
+    if not html:                            # slug-guess s přísnou validací
         for g in slug_urls(name):
             h = fetch(g)
-            if h and name_present(h, name):
+            if h and not is_parked(h) and name_present(h, name) and looks_restaurant(h):
                 website, html, by = g, h, "slug-guess"
                 break
 

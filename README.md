@@ -30,11 +30,36 @@ python scripts/scrape.py        # vygeneruje data/restaurants.json
 python -m http.server 8000      # http://localhost:8000
 ```
 
+## Zdroje a metody scrapingu (`scripts/sources.py`)
+
+Restaurace v zóně (Vinohrady/Žižkov) jsou objevené přes OSM (`build_directory.py`). Menu se získává v tomto pořadí:
+
+1. **menicka.cz** – primární, strukturované, denně (Praha 1–10).
+2. **choiceqr.com** – platforma; menu z `__NEXT_DATA__` JSON, sekce „polední menu", ceny ÷100.
+3. **kurátorovaná vrstva** `data/extra.json` – ručně/agenty ověřená menu (date-guard).
+4. **LLM extraktor** (volitelný) – pro heterogenní weby; vytáhne dnešní menu z textu stránky.
+5. **odkaz** – když menu nestáhneme, karta dá tlačítko na web restaurace; bez webu odkaz na Google.
+
+Stavy v UI: `scraped` (barva dle ceny) / `link` (modrá, odkaz na menu) / `none` (šedá, hledání na Googlu).
+Ruční opravy URL menu: `data/overrides.json`.
+
+### Zapnutí LLM extrakce (zvýší účinnost dlouhého ocasu)
+
+Bez klíče běží menicka + choiceqr. S OpenAI-compatible klíčem se denně stahuje i zbytek:
+v repo **Settings → Secrets and variables → Actions** přidej:
+
+- `OBED_LLM_KEY` – API klíč (např. free [Groq](https://console.groq.com), nebo vlastní endpoint).
+- `OBED_LLM_URL` – (volitelně) chat endpoint, default Groq.
+- `OBED_LLM_MODEL` – (volitelně) model, default `llama-3.3-70b-versatile`.
+
+## Aktualizace
+
+GitHub Action **`refresh.yml` běží každý den v ~10:00** (08:00 UTC) + ručně přes „Run workflow".
+
 ## Data & atribuce
 
-- Polední menu: **[Menicka.cz](https://www.menicka.cz)** (zdroj dat).
-- Mapové dlaždice: © OpenStreetMap, © CARTO.
-- Geokódování míst: Nominatim / OpenStreetMap.
+- Polední menu: **[Menicka.cz](https://www.menicka.cz)**, **choiceqr.com**, weby restaurací.
+- Objevování restaurací: **OpenStreetMap / Overpass**. Dlaždice © OpenStreetMap, © CARTO. Geokódování: Nominatim.
 
 Projekt je osobní/nekomerční. Menu jsou orientační – závazné je vždy menu přímo v restauraci.
 

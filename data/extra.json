@@ -1,5 +1,5 @@
 {
- "generated": "2026-06-05",
+ "generated": "2026-06-05T17:55:06Z",
  "menu_date": "pátek 5. 6. 2026",
  "source": "vlastní weby restaurací (pilot Vinohrady/Žižkov)",
  "restaurants": [
@@ -787,6 +787,448 @@
    "time_to": "14:00",
    "menu_date": "fixed",
    "web_confirmed": false,
+   "on_menicka": false,
+   "menicka_url": null
+  },
+  {
+   "id": "web-u-houdku",
+   "name": "U Houdků",
+   "lat": 50.0824314,
+   "lng": 14.4457779,
+   "amenity": "restaurant",
+   "source": "web",
+   "website": "https://uhoudku.com",
+   "source_url": "https://uhoudku.com",
+   "menu": [
+    {
+     "text": "Hovězí vývar s masem a nudlemi",
+     "price": 40
+    },
+    {
+     "text": "150g Hovězí pečeně na slanině",
+     "price": 170
+    },
+    {
+     "text": "150g Hovězí guláš s cibulkou",
+     "price": 170
+    },
+    {
+     "text": "150g Smažená uzená krkovice, bramborová kaše, okurka",
+     "price": 170
+    },
+    {
+     "text": "130g Kuřecí steak na pepři",
+     "price": 170
+    },
+    {
+     "text": "200g Zeleninový salát, cibulové kroužky, česnekový dip, toast",
+     "price": 170
+    }
+   ],
+   "time_from": "11:00",
+   "time_to": "15:00",
+   "menu_date": "2026-06-05",
+   "web_confirmed": true,
+   "on_menicka": false,
+   "menicka_url": null
+  },
+  {
+   "id": "web-sushi-sushi",
+   "name": "Sushi Sushi",
+   "lat": 50.0844227,
+   "lng": 14.4494912,
+   "amenity": "restaurant",
+   "source": "web",
+   "website": "https://sushisushi.cz",
+   "source_url": "https://sushisushi.cz/poledni-menu",
+   "menu": [
+    {
+     "text": "Lunch Menu 1",
+     "price": 190
+    },
+    {
+     "text": "Lunch Menu 2",
+     "price": 210
+    },
+    {
+     "text": "Lunch Menu 3",
+     "price": 210
+    },
+    {
+     "text": "Lunch Menu 4",
+     "price": 220
+    },
+    {
+     "text": "Poke Chicken Teriyaki",
+     "price": 190
+    },
+    {
+     "text": "Poke Lunch (Miso)",
+     "price": 220
+    },
+    {
+     "text": "Poke Lunch (Tom Yum)",
+     "price": 240
+    },
+    {
+     "text": "Poke Salmon Dream",
+     "price": 190
+    },
+    {
+     "text": "Poke Salmon Teriyaki",
+     "price": 190
+    },
+    {
+     "text": "Ramen Chicken",
+     "price": 190
+    },
+    {
+     "text": "Ramen Seafood",
+     "price": 190
+    }
+   ],
+   "time_from": null,
+   "time_to": "14:30",
+   "menu_date": "2026-06-05",
+   "web_confirmed": true,
+   "on_menicka": false,
+   "menicka_url": null
+  },
+  {
+   "id": "web-porke",
+   "name": "Porke",
+   "lat": 50.0823758,
+   "lng": 14.4502785,
+   "amenity": "restaurant",
+   "source": "web",
+   "website": "https://www.porke.cz/",
+   "source_url": "https://www.porke.cz/",
+   "menu": [
+    {
+     "text": "Batátový krém",
+     "price": 49
+    },
+    {
+     "text": "Boršč s masem",
+     "price": 49
+    },
+    {
+     "text": "Trhačka a Kroupeto",
+     "price": 179
+    },
+    {
+     "text": "Kuře na curry",
+     "price": 179
+    },
+    {
+     "text": "Caesar a krevety",
+     "price": 179
+    },
+    {
+     "text": "Mac and Cheese",
+     "price": 179
+    }
+   ],
+   "time_from": "11:00",
+   "time_to": "15:00",
+   "menu_date": "2026-06-05",
+   "web_confirmed": true,
+   "on_menicka": false,
+   "menicka_url": null
+  },
+  {
+   "id": "web-yamato",
+   "name": "Yamato",
+   "lat": 50.0784816,
+   "lng": 14.4461544,
+   "amenity": "restaurant",
+   "source": "web",
+   "website": "https://yamato.cz",
+   "source_url": "https://yamato.cz/cs/menu/poledni/",
+   "menu": [
+    {
+     "text": "Kaisen don",
+     "price": 850
+    },
+    {
+     "text": "Sake avocado don",
+     "price": 860
+    },
+    {
+     "text": "Maguro zuke don",
+     "price": 940
+    },
+    {
+     "text": "Sushi teishoku",
+     "price": 750
+    },
+    {
+     "text": "Sakana teishoku",
+     "price": 690
+    },
+    {
+     "text": "Yasai teishoku",
+     "price": 670
+    },
+    {
+     "text": "Sashimi to tempura teishoku",
+     "price": 710
+    },
+    {
+     "text": "Toriniku to tempura teishoku",
+     "price": 690
+    },
+    {
+     "text": "Gyuniku to tempura teishoku",
+     "price": 750
+    },
+    {
+     "text": "Toriniku to sashimi teishoku",
+     "price": 750
+    },
+    {
+     "text": "Gyuniku to sashimi teishoku",
+     "price": 850
+    }
+   ],
+   "time_from": "12:00",
+   "time_to": "14:45",
+   "menu_date": "2026-06-05",
+   "web_confirmed": true,
+   "on_menicka": false,
+   "menicka_url": null
+  },
+  {
+   "id": "web-vycep",
+   "name": "Výčep",
+   "lat": 50.0752577,
+   "lng": 14.4536258,
+   "amenity": "restaurant",
+   "source": "web",
+   "website": "https://www.vycepkorunni.cz/",
+   "source_url": "https://www.vycepkorunni.cz/menu/",
+   "menu": [
+    {
+     "text": "Zelňačka s uzenou klobásou a paprikou",
+     "price": 145
+    },
+    {
+     "text": "Řízek z kuřecích prsou s bramborovou kaší",
+     "price": 325
+    },
+    {
+     "text": "Pelmeně s houbovou omáčkou a chřestem",
+     "price": 355
+    },
+    {
+     "text": "Výpečky z vepřového bůčku s listovým špenátem",
+     "price": 385
+    },
+    {
+     "text": "Hovězí loupaná plec s křenovou omáčkou a knedlíkem",
+     "price": 425
+    },
+    {
+     "text": "Uzený pstruh se speciální omáčkou",
+     "price": 585
+    },
+    {
+     "text": "Grilovaný steak s pečenou kostní dření",
+     "price": 1285
+    },
+    {
+     "text": "Větrník s lískovými oříšky",
+     "price": 255
+    },
+    {
+     "text": "Zmrzlinový pohár s dortem",
+     "price": 285
+    }
+   ],
+   "time_from": "11:00",
+   "time_to": "14:45",
+   "menu_date": "2026-06-05",
+   "web_confirmed": true,
+   "on_menicka": false,
+   "menicka_url": null
+  },
+  {
+   "id": "web-nominanza",
+   "name": "Nominanza",
+   "lat": 50.0828974,
+   "lng": 14.4572085,
+   "amenity": "restaurant",
+   "source": "web",
+   "website": "https://nominanza.com",
+   "source_url": "https://nominanza.com/index-zizkov.html",
+   "menu": [
+    {
+     "text": "Gulášová polévka",
+     "price": 49
+    },
+    {
+     "text": "Kuře s rýží a zeleninou",
+     "price": 159
+    },
+    {
+     "text": "Casarecce se špenátem a kuřecím masem",
+     "price": 159
+    },
+    {
+     "text": "Casarecce s chilli a mozzarellou",
+     "price": 139
+    },
+    {
+     "text": "Risotto alla tirolese",
+     "price": 199
+    },
+    {
+     "text": "Mini pizza Cotto e Funghi (25 cm)",
+     "price": 159
+    },
+    {
+     "text": "Mini pizza Bianca s parmskou šunkou (25 cm)",
+     "price": 159
+    },
+    {
+     "text": "Salát s lososem",
+     "price": 169
+    },
+    {
+     "text": "Bruschetta tirolese",
+     "price": 99
+    }
+   ],
+   "time_from": "11:00",
+   "time_to": null,
+   "menu_date": "2026-06-05",
+   "web_confirmed": true,
+   "on_menicka": false,
+   "menicka_url": null
+  },
+  {
+   "id": "web-the-pind",
+   "name": "The Pind",
+   "lat": 50.0755591,
+   "lng": 14.4492449,
+   "amenity": "restaurant",
+   "source": "web",
+   "website": "https://thepind.cz",
+   "source_url": "https://thepind.cz",
+   "menu": [
+    {
+     "text": "Polední bufet – kuřecí jídla, čtyři vegetariánské volby, basmati rýže, indický chléb, pappadoms (1 cena)",
+     "price": 199
+    }
+   ],
+   "time_from": "11:00",
+   "time_to": "14:30",
+   "menu_date": "2026-06-05",
+   "web_confirmed": true,
+   "on_menicka": false,
+   "menicka_url": null
+  },
+  {
+   "id": "web-spirit-bar",
+   "name": "Spirit Bar",
+   "lat": 50.0859666,
+   "lng": 14.4486844,
+   "amenity": "restaurant",
+   "source": "web",
+   "website": "https://www.spiritbar.cz/",
+   "source_url": "https://spirit.pubmenu.eu/embeded/LzdxcEpINWtVZkR1MkJHd0JNN2RSUT09/pdf",
+   "menu": [
+    {
+     "text": "Menu č. 1 (179 Kč): Hovězí vývar s nudlemi nebo česnečka s krutony + Znojemská hovězí pečeně s rýží",
+     "price": 179
+    },
+    {
+     "text": "Menu č. 2 (179 Kč): Hovězí vývar s nudlemi nebo česnečka s krutony + Segedínský guláš s houskovým knedlíkem",
+     "price": 179
+    },
+    {
+     "text": "Hovězí vývar s nudlemi",
+     "price": 45
+    },
+    {
+     "text": "Česnečka se slaninou, sýrem a krutony",
+     "price": 50
+    },
+    {
+     "text": "Vepřový steak s pepřovou omáčkou a šťouchaným bramborem",
+     "price": 185
+    },
+    {
+     "text": "Kuřecí steak s bylinkovou omáčkou a opečeným bramborem",
+     "price": 185
+    },
+    {
+     "text": "Znojemská hovězí pečeně s rýží",
+     "price": 149
+    },
+    {
+     "text": "Segedínský guláš s houskovým knedlíkem",
+     "price": 159
+    },
+    {
+     "text": "Hovězí maso v koprové omáčce s houskovým knedlíkem",
+     "price": 159
+    },
+    {
+     "text": "Pikantní marinovaná křídélka s pečivem",
+     "price": 149
+    },
+    {
+     "text": "Vepřová čína s rýží",
+     "price": 159
+    },
+    {
+     "text": "Smažený sýr s vařeným bramborem a tatarkou",
+     "price": 149
+    }
+   ],
+   "time_from": null,
+   "time_to": null,
+   "menu_date": "2026-06-05",
+   "web_confirmed": true,
+   "on_menicka": false,
+   "menicka_url": null
+  },
+  {
+   "id": "web-vinohradsky-pivovar",
+   "name": "Vinohradský pivovar",
+   "lat": 50.0753123,
+   "lng": 14.457423,
+   "amenity": "restaurant",
+   "source": "web",
+   "website": "https://www.vinohradskypivovar.cz/",
+   "source_url": "https://www.vinohradskypivovar.cz/cs/korunni/",
+   "menu": [
+    {
+     "text": "Houbové kyselo s vařeným vejcem",
+     "price": 69
+    },
+    {
+     "text": "Znojemská hovězí pečeně, rýže basmati, naťová cibulka",
+     "price": 195
+    },
+    {
+     "text": "Směs salátů s pečenou cuketou, kapary, dresink z pečených paprik, grilovaná kuřecí prsa, bageta",
+     "price": 195
+    },
+    {
+     "text": "Koriandrové brambory grenaille se sezamovým olejem, hummus s kari kořením, naťová cibulka",
+     "price": 195
+    },
+    {
+     "text": "Pečené králičí stehno na česneku a slanině, bílé kysané zelí, bramborové šišky (specialita týdne)",
+     "price": 295
+    }
+   ],
+   "time_from": null,
+   "time_to": null,
+   "menu_date": "2026-06-05",
+   "web_confirmed": true,
    "on_menicka": false,
    "menicka_url": null
   }

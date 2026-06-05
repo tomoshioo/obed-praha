@@ -23,9 +23,12 @@ import unicodedata
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 try:
-    from sources import scrape_choiceqr
+    from sources import scrape_choiceqr, scrape_llm
 except Exception:  # noqa: BLE001
     def scrape_choiceqr(_u):
+        return None
+
+    def scrape_llm(_u, _n=""):
         return None
 
 
@@ -200,6 +203,13 @@ def merge_zone(feats):
                 status = "link"
         elif menu_url:
             status = "link"
+
+        if status == "link" and menu_url:          # LLM extraktor (jen když je OBED_LLM_KEY)
+            llm = scrape_llm(menu_url, d["name"])
+            if llm and llm.get("menu"):
+                menu, status = llm["menu"], "scraped"
+                tfrom = tfrom or llm.get("time_from")
+                tto = tto or llm.get("time_to")
 
         scraped += status == "scraped"
         linked += status == "link"

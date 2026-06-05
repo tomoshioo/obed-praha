@@ -11,6 +11,7 @@ Pouze Python stdlib (kvůli GitHub Actions).
 import urllib.request
 import re
 import json
+import os
 import ssl
 from urllib.parse import urljoin
 from datetime import datetime
@@ -178,6 +179,69 @@ def scrape_generic(website):
     if dishes and _today_present(mh):
         return dishes, website, "scraped"
     return None, None, "none"
+
+
+# ---------------- LLM extraktor (volitelný, zapne se ENV proměnnými) ----------------
+# Nejúčinnější metoda pro heterogenní weby. Aktivní jen když je nastaven OBED_LLM_KEY.
+# OBED_LLM_URL  = OpenAI-compatible chat endpoint (default Groq).
+# OBED_LLM_KEY  = API klíč (GitHub secret). Lze mířit i na vlastní FreeLLMAPI.
+# OBED_LLM_MODEL = model (default llama-3.3-70b).
+
+def _page_text(url, limit=7000):
+    h = fetch(url)
+    if not h:
+        return None
+    m = re.search(r'<script id="__NEXT_DATA__"[^>]*>(.*?)</script>', h, re.S)
+    if m:                       # choiceqr & spol. – menu je v JSON
+        try:
+            app = json.loads(m.group(1)).get("props", {}).get("app", {})
+            return json.dumps({"menu": app.get("menu"), "sections": app.get("sections")}, ensure_ascii=False)[:limit]
+        except Exception:
+            pass
+    t = re.sub(r"<(script|style)[^>]*>.*?</\1>", " ", h, flags=re.S | re.I)
+    t = re.sub(r"<[^>]+>", " ", t)
+    return re.sub(r"\s+", " ", t).strip()[:limit]
+
+
+def scrape_llm(url, name=""):
+    """Vytáhne dnešní polední menu pomocí LLM (OpenAI-compatible). None když není klíč/menu."""
+    key = os.environ.get("OBED_LLM_KEY")
+    if not key:
+        return None
+    endpoint = os.environ.get("OBED_LLM_URL", "https://api.groq.com/openai/v1/chat/completions")
+    model = os.environ.get("OBED_LLM_MODEL", "llama-3.3-70b-versatile")
+    txt = _page_text(url)
+    if not txt or len(txt) < 40:
+        return None
+    d = datetime.now()
+    today = f"{CZ_DAYS[d.weekday()]} {d.day}.{d.month}.{d.year}"
+    prompt = (
+        f"Jsi extraktor poledních menu. Z textu webu restaurace „{name}\" vytáhni POUZE DNEŠNÍ "
+        f"({today}) polední/denní menu (ne stálý jídelní lístek, ne nápoje). "
+        f"Vrať POUZE validní JSON: {{\"found\":true/false,\"menu\":[{{\"text\":\"název jídla\",\"price\":\"159 Kč\"}}],"
+        f"\"time_from\":\"11:00\" nebo null,\"time_to\":\"14:00\" nebo null}}. "
+        f"Když dnešní polední menu na stránce není, vrať found=false. TEXT:\n{txt}"
+    )
+    body = json.dumps({
+        "model": model,
+        "messages": [{"role": "user", "content": prompt}],
+        "temperature": 0,
+        "max_tokens": 1200,
+        "response_format": {"type": "json_object"},
+    }).encode("utf-8")
+    try:
+        req = urllib.request.Request(endpoint, data=body, headers={
+            "Authorization": f"Bearer {key}", "Content-Type": "application/json"})
+        resp = json.loads(urllib.request.urlopen(req, timeout=45, context=_CTX).read())
+        content = resp["choices"][0]["message"]["content"]
+        data = json.loads(content)
+        if data.get("found") and isinstance(data.get("menu"), list) and data["menu"]:
+            menu = [{"text": str(i.get("text", "")).strip(), "price": (i.get("price") or None)}
+                    for i in data["menu"] if i.get("text")]
+            return {"menu": menu, "time_from": data.get("time_from"), "time_to": data.get("time_to")}
+    except Exception:
+        return None
+    return None
 
 
 if __name__ == "__main__":

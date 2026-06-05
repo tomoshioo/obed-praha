@@ -106,7 +106,9 @@
              '" target="_blank" rel="noopener">📋 Zobrazit dnešní polední menu ↗</a></div>';
       linkUrl = r.website || r.menu_url; linkLabel = "web restaurace ↗";
     } else if (status === "none") {
-      body = '<div class="tip-empty">Online polední menu jsme zatím nenašli.</div>';
+      var q = encodeURIComponent(r.name + " Praha polední menu");
+      body = '<div class="tip-cta"><a class="cta cta-alt" href="https://www.google.com/search?q=' + q +
+             '" target="_blank" rel="noopener">🔎 Najít dnešní menu ↗</a></div>';
       linkUrl = r.website || null; linkLabel = "web ↗";
     } else {
       var stale = isWeb && r.menu_date_web && r.menu_date_web !== "fixed" && r.menu_date_web !== todayISO();
