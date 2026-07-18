@@ -1,6 +1,6 @@
 {
- "generated": "2026-07-17T10:00:56Z",
- "menu_date": "pátek 17. 7. 2026",
+ "generated": "2026-07-18T09:37:02Z",
+ "menu_date": "sobota 18. 7. 2026",
  "count": 211,
  "restaurants": [
   {
@@ -2859,29 +2859,8 @@
    "lat": 50.0771791,
    "lng": 14.4521443,
    "url": "https://utelleru.choiceqr.com/section:poledni-menu",
-   "menu": [
-    {
-     "text": "veg BROKOLICOVÝ KRÉM S BRAMBOROVOU SLÁMOU",
-     "price": "59 Kč"
-    },
-    {
-     "text": "Náš tip:  FILET TRESKY S KAPAROVOU OMÁČKOU, opečený fenykl, sotýrované brambory s tymiánem a cibulkou",
-     "price": "249 Kč"
-    },
-    {
-     "text": "1. KUŘECÍ ŘÍZEČKY v petrželové strouhance, vařené brambory, kyselá zelenina",
-     "price": "189 Kč"
-    },
-    {
-     "text": "2. HOVĚZÍ NA FILIPÍNSKÝ ZPŮSOB s rajčaty a karotkou, jasmínová rýže",
-     "price": "189 Kč"
-    },
-    {
-     "text": "3. SPAGHETTI AGLIO OLIO se slaninou a sýrem Gran Biraghi",
-     "price": "179 Kč"
-    }
-   ],
-   "menu_status": "scraped",
+   "menu": [],
+   "menu_status": "link",
    "menu_url": "https://utelleru.choiceqr.com/section:poledni-menu",
    "platform": "choiceqr",
    "source": "web",
