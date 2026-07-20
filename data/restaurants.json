@@ -1,6 +1,6 @@
 {
- "generated": "2026-07-19T09:54:14Z",
- "menu_date": "neděle 19. 7. 2026",
+ "generated": "2026-07-20T10:55:23Z",
+ "menu_date": "pondělí 20. 7. 2026",
  "count": 211,
  "restaurants": [
   {
@@ -2008,15 +2008,15 @@
    "url": "https://chilliandlime.choiceqr.com/section:poledni-menu",
    "menu": [
     {
-     "text": "M1 GA SA OT",
+     "text": "M1 - PEANUT CHICKEN",
      "price": "199 Kč"
     },
     {
-     "text": "M1 Veggie - DAU SA OT",
-     "price": "199 Kč"
+     "text": "M2 - MIEN XAO BO",
+     "price": "209 Kč"
     },
     {
-     "text": "M2 - BO XAO DUA",
+     "text": "M2 Veggie - MIEN XAO DAU",
      "price": "209 Kč"
     }
    ],
@@ -2859,8 +2859,25 @@
    "lat": 50.0771791,
    "lng": 14.4521443,
    "url": "https://utelleru.choiceqr.com/section:poledni-menu",
-   "menu": [],
-   "menu_status": "link",
+   "menu": [
+    {
+     "text": "HRÁŠKOVÝ KRÉM SE SÝREM GRAN BIRAGHI",
+     "price": "59 Kč"
+    },
+    {
+     "text": "Náš tip:\t\tŠPANĚLSKÝ PTÁČEK Z HOVĚZÍ KÝTY\t\t\t\t\t s vajíčkem, špekáčkem a slaninou v silné omáčce, jasmínová rýže",
+     "price": "249 Kč"
+    },
+    {
+     "text": "2.\tVEPŘOVÉ MASO S MRKVÍ, mačkané pečené brambory",
+     "price": "189 Kč"
+    },
+    {
+     "text": "3. SALÁT S GRILOVANÝM SÝREM CAMEMBERT, ořechy a medem",
+     "price": "179 Kč"
+    }
+   ],
+   "menu_status": "scraped",
    "menu_url": "https://utelleru.choiceqr.com/section:poledni-menu",
    "platform": "choiceqr",
    "source": "web",
