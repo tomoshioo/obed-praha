@@ -1,6 +1,6 @@
 {
- "generated": "2026-07-20T10:55:23Z",
- "menu_date": "pondělí 20. 7. 2026",
+ "generated": "2026-07-21T10:27:47Z",
+ "menu_date": "úterý 21. 7. 2026",
  "count": 211,
  "restaurants": [
   {
@@ -2861,19 +2861,19 @@
    "url": "https://utelleru.choiceqr.com/section:poledni-menu",
    "menu": [
     {
-     "text": "HRÁŠKOVÝ KRÉM SE SÝREM GRAN BIRAGHI",
-     "price": "59 Kč"
+     "text": "Náš tip:\t\tVEPŘOVÁ PANENKA S BRUSINKOVOU OMÁČKOU,\t\t\t\t\t grilovaná cuketa, šťouchané brambory zapečené se sýrem",
+     "price": "239 Kč"
     },
     {
-     "text": "Náš tip:\t\tŠPANĚLSKÝ PTÁČEK Z HOVĚZÍ KÝTY\t\t\t\t\t s vajíčkem, špekáčkem a slaninou v silné omáčce, jasmínová rýže",
-     "price": "249 Kč"
-    },
-    {
-     "text": "2.\tVEPŘOVÉ MASO S MRKVÍ, mačkané pečené brambory",
+     "text": "1. SMAŽENÝ KVĚTÁK, pažitkové brambory, domácí tatarská omáčka",
      "price": "189 Kč"
     },
     {
-     "text": "3. SALÁT S GRILOVANÝM SÝREM CAMEMBERT, ořechy a medem",
+     "text": "2.\tKUŘE NA PAPRICE s krémovou smetanou, tarhoňa",
+     "price": "189 Kč"
+    },
+    {
+     "text": "3.\tČOČKA NAKYSELO se třemi druhy klobásek a sázeným vejcem, kyselá okurka",
      "price": "179 Kč"
     }
    ],
