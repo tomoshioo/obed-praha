@@ -1,6 +1,6 @@
 {
- "generated": "2026-07-21T10:27:47Z",
- "menu_date": "úterý 21. 7. 2026",
+ "generated": "2026-07-22T10:28:28Z",
+ "menu_date": "středa 22. 7. 2026",
  "count": 211,
  "restaurants": [
   {
@@ -2861,19 +2861,23 @@
    "url": "https://utelleru.choiceqr.com/section:poledni-menu",
    "menu": [
     {
-     "text": "Náš tip:\t\tVEPŘOVÁ PANENKA S BRUSINKOVOU OMÁČKOU,\t\t\t\t\t grilovaná cuketa, šťouchané brambory zapečené se sýrem",
-     "price": "239 Kč"
+     "text": "KUŘECÍ VÝVAR S RÝŽÍ A HRÁŠKEM",
+     "price": "59 Kč"
     },
     {
-     "text": "1. SMAŽENÝ KVĚTÁK, pažitkové brambory, domácí tatarská omáčka",
+     "text": "Náš tip:\t\tTELECÍ ŘÍZEČKY V BYLINKOVÉ STROUHANCE,\t\t\t\t\t mléčná bramborová kaše, šopský salát s balkánským sýrem",
+     "price": "249 Kč"
+    },
+    {
+     "text": "1.\tKUŘECÍ KORMA s jogurtem a mátou, jasmínová rýže",
      "price": "189 Kč"
     },
     {
-     "text": "2.\tKUŘE NA PAPRICE s krémovou smetanou, tarhoňa",
+     "text": "2.\tKŘENOVÁ OMÁČKA s hovězím masem, houskové knedlíky",
      "price": "189 Kč"
     },
     {
-     "text": "3.\tČOČKA NAKYSELO se třemi druhy klobásek a sázeným vejcem, kyselá okurka",
+     "text": "3.\tOMELETA SE ŠUNKOU A SÝREM, vařené brambory, nakládaná zelenina",
      "price": "179 Kč"
     }
    ],
