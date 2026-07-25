@@ -1,6 +1,6 @@
 {
- "generated": "2026-07-24T10:22:01Z",
- "menu_date": "pátek 24. 7. 2026",
+ "generated": "2026-07-25T09:51:30Z",
+ "menu_date": "sobota 25. 7. 2026",
  "count": 211,
  "restaurants": [
   {
@@ -2859,25 +2859,8 @@
    "lat": 50.0771791,
    "lng": 14.4521443,
    "url": "https://utelleru.choiceqr.com/section:poledni-menu",
-   "menu": [
-    {
-     "text": "Náš tip:\t\tHOVĚZÍ KULATÁ PLEC SE SVÍČKOVOU OMÁČKOU,\t\t\t\t\t nakládané brusinky, domácí houskové knedlíky",
-     "price": "249 Kč"
-    },
-    {
-     "text": "1.\tPIKANTNÍ KATŮV ŠLEH se zeleninou, americké brambory",
-     "price": "189 Kč"
-    },
-    {
-     "text": "2.\tGRATINOVANÝ LILEK s masovým ragú a mozzarellou, pšeničný bulgur",
-     "price": "189 Kč"
-    },
-    {
-     "text": "3. SMAŽENÉ ŽAMPIÓNY, brambory vařené v páře, tatarská omáčka",
-     "price": "179 Kč"
-    }
-   ],
-   "menu_status": "scraped",
+   "menu": [],
+   "menu_status": "link",
    "menu_url": "https://utelleru.choiceqr.com/section:poledni-menu",
    "platform": "choiceqr",
    "source": "web",
