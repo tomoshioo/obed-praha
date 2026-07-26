@@ -1,6 +1,6 @@
 {
- "generated": "2026-07-25T09:51:30Z",
- "menu_date": "sobota 25. 7. 2026",
+ "generated": "2026-07-26T10:03:07Z",
+ "menu_date": "neděle 26. 7. 2026",
  "count": 211,
  "restaurants": [
   {
@@ -2008,15 +2008,15 @@
    "url": "https://chilliandlime.choiceqr.com/section:poledni-menu",
    "menu": [
     {
-     "text": "M1 - PEANUT CHICKEN",
+     "text": "M1 - GA XAO NAM",
      "price": "199 Kč"
     },
     {
-     "text": "M2 - MIEN XAO BO",
-     "price": "209 Kč"
+     "text": "M1 Veggie - DAU XAO NAM",
+     "price": "199 Kč"
     },
     {
-     "text": "M2 Veggie - MIEN XAO DAU",
+     "text": "M2 - BO XAO CAN",
      "price": "209 Kč"
     }
    ],
