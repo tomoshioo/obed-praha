@@ -1,6 +1,6 @@
 {
- "generated": "2026-07-26T10:03:07Z",
- "menu_date": "neděle 26. 7. 2026",
+ "generated": "2026-07-27T11:27:31Z",
+ "menu_date": "pondělí 27. 7. 2026",
  "count": 211,
  "restaurants": [
   {
@@ -2670,8 +2670,29 @@
    "lat": 50.083352,
    "lng": 14.4459664,
    "url": "https://areparnaprague.choiceqr.com/section:poledni-menu",
-   "menu": [],
-   "menu_status": "link",
+   "menu": [
+    {
+     "text": "Limonády maracuya",
+     "price": "75 Kč"
+    },
+    {
+     "text": "Limonády Mango",
+     "price": "75 Kč"
+    },
+    {
+     "text": "Papelón con limón",
+     "price": "80 Kč"
+    },
+    {
+     "text": "Cola",
+     "price": "55 Kč"
+    },
+    {
+     "text": "Coca cola zero // zero cukru",
+     "price": "55 Kč"
+    }
+   ],
+   "menu_status": "scraped",
    "menu_url": "https://areparnaprague.choiceqr.com/section:poledni-menu",
    "platform": "choiceqr",
    "source": "web",
@@ -2859,8 +2880,21 @@
    "lat": 50.0771791,
    "lng": 14.4521443,
    "url": "https://utelleru.choiceqr.com/section:poledni-menu",
-   "menu": [],
-   "menu_status": "link",
+   "menu": [
+    {
+     "text": "CHŘESTOVÝ KRÉM S KRUTÓNY",
+     "price": "59 Kč"
+    },
+    {
+     "text": "Náš tip:\t\tSEKANÝ TELECÍ STEAK S OMÁČKOU BEÁRNAISE,\t\t\t\t\t míchaná zelenina na másle, pečené rozmarýnové grenaille",
+     "price": "249 Kč"
+    },
+    {
+     "text": "2.\tPIKANTNÍ HOVĚZÍ GULÁŠ se šalotkou a jarní cibulkou, bagel",
+     "price": "189 Kč"
+    }
+   ],
+   "menu_status": "scraped",
    "menu_url": "https://utelleru.choiceqr.com/section:poledni-menu",
    "platform": "choiceqr",
    "source": "web",
