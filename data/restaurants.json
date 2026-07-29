@@ -1,6 +1,6 @@
 {
- "generated": "2026-07-28T10:38:41Z",
- "menu_date": "úterý 28. 7. 2026",
+ "generated": "2026-07-29T10:42:13Z",
+ "menu_date": "středa 29. 7. 2026",
  "count": 211,
  "restaurants": [
   {
@@ -2861,19 +2861,23 @@
    "url": "https://utelleru.choiceqr.com/section:poledni-menu",
    "menu": [
     {
-     "text": "ČESNEKOVÝ KRÉM S HERMELÍNEM",
+     "text": "ZELENINOVÝ BORŠČ S KOPREM",
      "price": "59 Kč"
     },
     {
-     "text": "Náš tip:\t\tSTEAK Z VEPŘOVÉ KRKOVICE S HOŘČIČNOU OMÁČKOU,\t\t\t\t\t  fazolky s česnekem, pečené batáty se sezamem",
-     "price": "229 Kč"
+     "text": "Náš tip:\t\tHOVĚZÍ LOUPANÁ PLEC NA ČERVENÉM VÍNĚ\t\t\t\t\t s restovanými žampióny a zeleninou, pastinákové pyré",
+     "price": "239 Kč"
     },
     {
-     "text": "1.\tKUŘECÍ NUDLIČKY S KUKUŘICÍ na pečených bramborách, zakysaná smetana",
+     "text": "1.\tDOMÁCÍ KARBANÁTEK, šťouchané brambory s cibulkou, rajčatový salát",
      "price": "189 Kč"
     },
     {
-     "text": "3.\tTĚSTOVINOVÝ SALÁT s parmskou šunkou, olivami, dresink ze sušených rajčat",
+     "text": "2.\tKUŘECÍ KARI RIZOTO se sýrem a kyselou okurkou",
+     "price": "189 Kč"
+    },
+    {
+     "text": "3. KOPROVKA SE DVĚMA VEJCI 63°, pečené zámecké brambory",
      "price": "179 Kč"
     }
    ],
