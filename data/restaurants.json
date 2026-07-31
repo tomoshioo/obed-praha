@@ -1,6 +1,6 @@
 {
- "generated": "2026-07-30T10:27:53Z",
- "menu_date": "čtvrtek 30. 7. 2026",
+ "generated": "2026-07-31T10:42:48Z",
+ "menu_date": "pátek 31. 7. 2026",
  "count": 211,
  "restaurants": [
   {
@@ -2861,23 +2861,19 @@
    "url": "https://utelleru.choiceqr.com/section:poledni-menu",
    "menu": [
     {
-     "text": "HOVĚZÍ VÝVAR S NUDLEMI",
-     "price": "59 Kč"
-    },
-    {
-     "text": "Náš tip:\t\tCAESAR SALÁT S ANGLICKÝM ROASTBEEFEM,\t\t\t\t\t vařeným vejcem, sýrem Gran Biraghi a česnekovými krutóny",
+     "text": "Náš tip:\t\tFISH & CHIPS - filet tresky v pivním těstíčku,\t\t\t\t\t mačkaný hrášek na másle, hranolky, citrónová majonéza",
      "price": "249 Kč"
     },
     {
-     "text": "1.\tPEČENÁ KRŮTÍ PRSA s omáčkou Choron, americké brambory s karotkou",
+     "text": "1.\tKUŘE NA DIJONSKÉ HOŘČICI, široké nudle s petrželkou a máslem",
      "price": "189 Kč"
     },
     {
-     "text": "2.\tCHILLI CON CARNE s kysanou smetanou, pšeničná tortilla",
+     "text": "2.\tVEPŘOVÉ SOTÉ SE ŽAMPIÓNY a tymiánem, jasmínová rýže",
      "price": "189 Kč"
     },
     {
-     "text": "3. BROKOLICE V SEZAMOVÉM TĚSTÍČKU, rýže, salát z okurek s koriandrem",
+     "text": "3.\tFRANCOUZSKÉ BRAMBORY s uzeným masem a vejci, nakládaná okurka",
      "price": "179 Kč"
     }
    ],
