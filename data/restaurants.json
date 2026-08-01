@@ -1,6 +1,6 @@
 {
- "generated": "2026-07-31T10:42:48Z",
- "menu_date": "pátek 31. 7. 2026",
+ "generated": "2026-08-01T10:02:04Z",
+ "menu_date": "sobota 1. 8. 2026",
  "count": 211,
  "restaurants": [
   {
@@ -2859,25 +2859,8 @@
    "lat": 50.0771791,
    "lng": 14.4521443,
    "url": "https://utelleru.choiceqr.com/section:poledni-menu",
-   "menu": [
-    {
-     "text": "Náš tip:\t\tFISH & CHIPS - filet tresky v pivním těstíčku,\t\t\t\t\t mačkaný hrášek na másle, hranolky, citrónová majonéza",
-     "price": "249 Kč"
-    },
-    {
-     "text": "1.\tKUŘE NA DIJONSKÉ HOŘČICI, široké nudle s petrželkou a máslem",
-     "price": "189 Kč"
-    },
-    {
-     "text": "2.\tVEPŘOVÉ SOTÉ SE ŽAMPIÓNY a tymiánem, jasmínová rýže",
-     "price": "189 Kč"
-    },
-    {
-     "text": "3.\tFRANCOUZSKÉ BRAMBORY s uzeným masem a vejci, nakládaná okurka",
-     "price": "179 Kč"
-    }
-   ],
-   "menu_status": "scraped",
+   "menu": [],
+   "menu_status": "link",
    "menu_url": "https://utelleru.choiceqr.com/section:poledni-menu",
    "platform": "choiceqr",
    "source": "web",
