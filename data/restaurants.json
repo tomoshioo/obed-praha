@@ -1,6 +1,6 @@
 {
- "generated": "2026-08-02T10:00:32Z",
- "menu_date": "neděle 2. 8. 2026",
+ "generated": "2026-08-03T11:27:56Z",
+ "menu_date": "pondělí 3. 8. 2026",
  "count": 211,
  "restaurants": [
   {
@@ -2008,15 +2008,15 @@
    "url": "https://chilliandlime.choiceqr.com/section:poledni-menu",
    "menu": [
     {
-     "text": "M1 - GA XAO NAM",
+     "text": "M1 - YELLOW CHICKEN",
      "price": "199 Kč"
     },
     {
-     "text": "M1 Veggie - DAU XAO NAM",
+     "text": "M1 Veggie - YELLOW TOFU",
      "price": "199 Kč"
     },
     {
-     "text": "M2 - BO XAO CAN",
+     "text": "M2 - BO SA OT",
      "price": "209 Kč"
     }
    ],
@@ -2859,8 +2859,25 @@
    "lat": 50.0771791,
    "lng": 14.4521443,
    "url": "https://utelleru.choiceqr.com/section:poledni-menu",
-   "menu": [],
-   "menu_status": "link",
+   "menu": [
+    {
+     "text": "Náš tip:\t\tTELECÍ MEDAJLONKY S OMÁČKOU BÈARNAISE,\t\t\t\t\t brokolice na másle, pečené americké brambory",
+     "price": "249 Kč"
+    },
+    {
+     "text": "1.\tKUŘECÍ ŘÍZEK V SÝROVÉM TĚSTÍČKU, brambory, salát coleslaw",
+     "price": "189 Kč"
+    },
+    {
+     "text": "2.\tHOVĚZÍ KARABÁČEK na česneku, smetanový špenát, šumavské knedlíky",
+     "price": "189 Kč"
+    },
+    {
+     "text": "3. veg LINGUINE S MOZZARELLOU, rajčatovou omáčkou a bazalkou",
+     "price": "179 Kč"
+    }
+   ],
+   "menu_status": "scraped",
    "menu_url": "https://utelleru.choiceqr.com/section:poledni-menu",
    "platform": "choiceqr",
    "source": "web",
