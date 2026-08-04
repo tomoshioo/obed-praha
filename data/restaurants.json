@@ -1,6 +1,6 @@
 {
- "generated": "2026-08-03T11:27:56Z",
- "menu_date": "pondělí 3. 8. 2026",
+ "generated": "2026-08-04T10:42:33Z",
+ "menu_date": "úterý 4. 8. 2026",
  "count": 211,
  "restaurants": [
   {
@@ -2861,19 +2861,23 @@
    "url": "https://utelleru.choiceqr.com/section:poledni-menu",
    "menu": [
     {
-     "text": "Náš tip:\t\tTELECÍ MEDAJLONKY S OMÁČKOU BÈARNAISE,\t\t\t\t\t brokolice na másle, pečené americké brambory",
-     "price": "249 Kč"
+     "text": "KUŘECÍ VÝVAR S TĚSTOVINAMI",
+     "price": "59 Kč"
     },
     {
-     "text": "1.\tKUŘECÍ ŘÍZEK V SÝROVÉM TĚSTÍČKU, brambory, salát coleslaw",
+     "text": "Náš tip:\t\tVEPŘOVÁ PANENKA S OMÁČKOU ZE ZELENÉHO PEPŘE,\t\t\t\t\t barevná karotka na másle, šťouchané brambory se slaninou",
+     "price": "239 Kč"
+    },
+    {
+     "text": "1.\tKRŮTÍ KARI S ČERVENOU ČOČKOU a koriandrem, jasmínová rýže",
      "price": "189 Kč"
     },
     {
-     "text": "2.\tHOVĚZÍ KARABÁČEK na česneku, smetanový špenát, šumavské knedlíky",
+     "text": "2.\tDOMÁCÍ HALUŠKY S BRYNZOU, škvařenou slaninou a křupavou cibulkou",
      "price": "189 Kč"
     },
     {
-     "text": "3. veg LINGUINE S MOZZARELLOU, rajčatovou omáčkou a bazalkou",
+     "text": "3. veg SALÁT Z MELOUNU A RAJČAT s balkánským sýrem a olivami, tousty",
      "price": "179 Kč"
     }
    ],
