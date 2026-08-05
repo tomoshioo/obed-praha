@@ -1,6 +1,6 @@
 {
- "generated": "2026-08-04T10:42:33Z",
- "menu_date": "úterý 4. 8. 2026",
+ "generated": "2026-08-05T10:38:53Z",
+ "menu_date": "středa 5. 8. 2026",
  "count": 211,
  "restaurants": [
   {
@@ -2861,23 +2861,19 @@
    "url": "https://utelleru.choiceqr.com/section:poledni-menu",
    "menu": [
     {
-     "text": "KUŘECÍ VÝVAR S TĚSTOVINAMI",
+     "text": "veg JIHOČESKÁ KULAJDA S HOUBAMI A KOPREM",
      "price": "59 Kč"
     },
     {
-     "text": "Náš tip:\t\tVEPŘOVÁ PANENKA S OMÁČKOU ZE ZELENÉHO PEPŘE,\t\t\t\t\t barevná karotka na másle, šťouchané brambory se slaninou",
-     "price": "239 Kč"
-    },
-    {
-     "text": "1.\tKRŮTÍ KARI S ČERVENOU ČOČKOU a koriandrem, jasmínová rýže",
+     "text": "1.\tČEVAPČIČI s domácím ajvarem, vařené brambory, nakládaná cibule",
      "price": "189 Kč"
     },
     {
-     "text": "2.\tDOMÁCÍ HALUŠKY S BRYNZOU, škvařenou slaninou a křupavou cibulkou",
+     "text": "2.\tVEPŘOVÁ PLEC NA PAPRICE, těstoviny kolínka",
      "price": "189 Kč"
     },
     {
-     "text": "3. veg SALÁT Z MELOUNU A RAJČAT s balkánským sýrem a olivami, tousty",
+     "text": "3. veg POHANKOVÉ RIZOTO S HOUBAMI a uzeným sýrem, kyselá okurka",
      "price": "179 Kč"
     }
    ],
