@@ -1,6 +1,6 @@
 {
- "generated": "2026-08-07T09:02:41Z",
- "menu_date": "pátek 7. 8. 2026",
+ "generated": "2026-08-08T08:45:16Z",
+ "menu_date": "sobota 8. 8. 2026",
  "count": 211,
  "restaurants": [
   {
@@ -2859,29 +2859,8 @@
    "lat": 50.0771791,
    "lng": 14.4521443,
    "url": "https://utelleru.choiceqr.com/section:poledni-menu",
-   "menu": [
-    {
-     "text": "HOVĚZÍ VÝVAR S CELESTÝNSKÝMI NUDLEMI",
-     "price": "59 Kč"
-    },
-    {
-     "text": "Náš tip: HOVĚZÍ CHEESEBURGER SE SÝREM GOUDA A SLANINOU, koktejlovou majonézou a nakládanou cibulí, salát mesclun",
-     "price": "249 Kč"
-    },
-    {
-     "text": "1. PEČENÉ KUŘE NA MÁSLE, bramborová kaše, šopský salát",
-     "price": "189 Kč"
-    },
-    {
-     "text": "2. RAJSKÁ OMÁČKA s vařeným hovězím masem, domácí houskové knedlíky",
-     "price": "189 Kč"
-    },
-    {
-     "text": "3. veg BURRITO PAPRIKY plněné cheddarem a fazolemi, tortilla chips, salsa",
-     "price": "179 Kč"
-    }
-   ],
-   "menu_status": "scraped",
+   "menu": [],
+   "menu_status": "link",
    "menu_url": "https://utelleru.choiceqr.com/section:poledni-menu",
    "platform": "choiceqr",
    "source": "web",
