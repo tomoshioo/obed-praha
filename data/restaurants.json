@@ -1,6 +1,6 @@
 {
- "generated": "2026-08-09T08:46:23Z",
- "menu_date": "neděle 9. 8. 2026",
+ "generated": "2026-08-10T09:25:50Z",
+ "menu_date": "pondělí 10. 8. 2026",
  "count": 211,
  "restaurants": [
   {
@@ -2008,15 +2008,15 @@
    "url": "https://chilliandlime.choiceqr.com/section:poledni-menu",
    "menu": [
     {
-     "text": "M1 - YELLOW CHICKEN",
+     "text": "M1 - PHO TRON GA",
      "price": "199 Kč"
     },
     {
-     "text": "M1 Veggie - YELLOW TOFU",
+     "text": "M1 Veggie - PHO TRON DAU",
      "price": "199 Kč"
     },
     {
-     "text": "M2 - BO SA OT",
+     "text": "M2 - BEEF MASSAMAN CURRY",
      "price": "209 Kč"
     }
    ],
@@ -2859,8 +2859,29 @@
    "lat": 50.0771791,
    "lng": 14.4521443,
    "url": "https://utelleru.choiceqr.com/section:poledni-menu",
-   "menu": [],
-   "menu_status": "link",
+   "menu": [
+    {
+     "text": "DRŮBEŽÍ VÝVAR S FRITÁTOVÝMI NUDLEMI",
+     "price": "59 Kč"
+    },
+    {
+     "text": "Náš tip:\t\tQUESADILLA S KUŘETEM, SÝREM CHEDDAR A GOUDA,\t\t\t\t\t pikantní rajčatová salsa, hranolky s limetovou majonézou",
+     "price": "249 Kč"
+    },
+    {
+     "text": "1. SMAŽENÉ CUKETY v sezamové strouhance, brambory, tatarská omáčka",
+     "price": "189 Kč"
+    },
+    {
+     "text": "2.\tSRBSKÉ RIZOTO s vepřovým masem a balkánským sýrem, kyselá okurka",
+     "price": "189 Kč"
+    },
+    {
+     "text": "3.\tMEXICKÝ GULÁŠ Z HOVĚZÍHO KARABÁČKU s fazolemi, jasmínová rýže",
+     "price": "179 Kč"
+    }
+   ],
+   "menu_status": "scraped",
    "menu_url": "https://utelleru.choiceqr.com/section:poledni-menu",
    "platform": "choiceqr",
    "source": "web",
