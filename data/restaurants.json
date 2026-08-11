@@ -1,6 +1,6 @@
 {
- "generated": "2026-08-10T09:25:50Z",
- "menu_date": "pondělí 10. 8. 2026",
+ "generated": "2026-08-11T09:00:46Z",
+ "menu_date": "úterý 11. 8. 2026",
  "count": 211,
  "restaurants": [
   {
@@ -2861,23 +2861,19 @@
    "url": "https://utelleru.choiceqr.com/section:poledni-menu",
    "menu": [
     {
-     "text": "DRŮBEŽÍ VÝVAR S FRITÁTOVÝMI NUDLEMI",
-     "price": "59 Kč"
+     "text": "Náš tip:\t\tVEPŘOVÁ PANENKA S DIJONSKOU OMÁČKOU,\t\t\t\t\t mladá kapusta na másle, pečené americké brambory",
+     "price": "239 Kč"
     },
     {
-     "text": "Náš tip:\t\tQUESADILLA S KUŘETEM, SÝREM CHEDDAR A GOUDA,\t\t\t\t\t pikantní rajčatová salsa, hranolky s limetovou majonézou",
-     "price": "249 Kč"
-    },
-    {
-     "text": "1. SMAŽENÉ CUKETY v sezamové strouhance, brambory, tatarská omáčka",
+     "text": "1.\tKUŘECÍ ŠPÍZ SE SLANINOU, bramborové krokety, tatarská omáčka",
      "price": "189 Kč"
     },
     {
-     "text": "2.\tSRBSKÉ RIZOTO s vepřovým masem a balkánským sýrem, kyselá okurka",
+     "text": "2. SPAGHETTI S HOUBAMI, parmazánovou omáčkou a petrželí",
      "price": "189 Kč"
     },
     {
-     "text": "3.\tMEXICKÝ GULÁŠ Z HOVĚZÍHO KARABÁČKU s fazolemi, jasmínová rýže",
+     "text": "3.\tSMAŽENÉ RYBÍ KROKETY s kari a koriandrem, cizrnové pyré, polníček",
      "price": "179 Kč"
     }
    ],
