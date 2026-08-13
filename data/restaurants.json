@@ -1,6 +1,6 @@
 {
- "generated": "2026-08-12T09:14:50Z",
- "menu_date": "středa 12. 8. 2026",
+ "generated": "2026-08-13T09:15:39Z",
+ "menu_date": "čtvrtek 13. 8. 2026",
  "count": 211,
  "restaurants": [
   {
@@ -2014,10 +2014,6 @@
     {
      "text": "M1 Veggie - PHO TRON DAU",
      "price": "199 Kč"
-    },
-    {
-     "text": "M2 - BEEF MASSAMAN CURRY",
-     "price": "209 Kč"
     }
    ],
    "menu_status": "scraped",
@@ -2861,23 +2857,23 @@
    "url": "https://utelleru.choiceqr.com/section:poledni-menu",
    "menu": [
     {
-     "text": "CIBULAČKA SE SÝROVÝMI KRUTÓNY",
+     "text": "HOVĚZÍ VÝVAR S MASEM A NUDLEMI",
      "price": "59 Kč"
     },
     {
-     "text": "Náš tip:\t\tTERES MAJOR STEAK SE SALSOU CHIMICHURRI,\t\t\t\t\t kukuřice na másle, rozmarýnové grenaille",
+     "text": "Náš tip:\t\tKACHNÍ BURGER S BRUSINKOVOU MAJONÉZOU,\t\t\t\t\t ledovým salátem, karamelizovanou cibulí, salát mesclun",
      "price": "249 Kč"
     },
     {
-     "text": "1.\tKUŘECÍ ŘÍZEČKY v bylinkové strouhance, bramborová kaše, hanácký salát",
+     "text": "1.\tLASAGNE BOLOGNESE s mozzarellou, listové saláty s octem balsamico",
      "price": "189 Kč"
     },
     {
-     "text": "2.\tVEPŘOVÁ JÁTRA NA MAJORÁNCE se sázeným vejcem, dušená rýže",
+     "text": "2.\tLIBOVÉ VEPŘOVÉ VÝPEČKY, dušené hlávkové zelí, bramborové knedlíky",
      "price": "189 Kč"
     },
     {
-     "text": "3.\tSALÁT S KRŮTÍM MASEM, rajčaty, šalotkou, asijským dresinkem a sezamem",
+     "text": "3. SALÁT S ČOČKOU BELUGA, zelenými fazolkami a bylinkovým dresinkem",
      "price": "179 Kč"
     }
    ],
