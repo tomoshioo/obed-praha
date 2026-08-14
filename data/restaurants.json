@@ -1,6 +1,6 @@
 {
- "generated": "2026-08-13T09:15:39Z",
- "menu_date": "čtvrtek 13. 8. 2026",
+ "generated": "2026-08-14T09:10:14Z",
+ "menu_date": "pátek 14. 8. 2026",
  "count": 211,
  "restaurants": [
   {
@@ -2857,23 +2857,19 @@
    "url": "https://utelleru.choiceqr.com/section:poledni-menu",
    "menu": [
     {
-     "text": "HOVĚZÍ VÝVAR S MASEM A NUDLEMI",
-     "price": "59 Kč"
+     "text": "Náš tip:\t\tPORCHETTA - pečená roláda z vepřového boku s bylinkami,\t\t\t\t\t špenát s parmazánem a smetanou, bramborová kaše",
+     "price": "229 Kč"
     },
     {
-     "text": "Náš tip:\t\tKACHNÍ BURGER S BRUSINKOVOU MAJONÉZOU,\t\t\t\t\t ledovým salátem, karamelizovanou cibulí, salát mesclun",
-     "price": "249 Kč"
-    },
-    {
-     "text": "1.\tLASAGNE BOLOGNESE s mozzarellou, listové saláty s octem balsamico",
+     "text": "1.\tSMAŽENÝ DRŮBEŽÍ KARBANÁTEK, mačkané brambory, rajčatový salát",
      "price": "189 Kč"
     },
     {
-     "text": "2.\tLIBOVÉ VEPŘOVÉ VÝPEČKY, dušené hlávkové zelí, bramborové knedlíky",
+     "text": "2. TRHANÁ HLÍVA V PITA CHLEBU, okurkové tzatziki, mesclun",
      "price": "189 Kč"
     },
     {
-     "text": "3. SALÁT S ČOČKOU BELUGA, zelenými fazolkami a bylinkovým dresinkem",
+     "text": "3.\tHOVĚZÍ TOKÁŇ na bílém víně s paprikami, dušená rýže",
      "price": "179 Kč"
     }
    ],
