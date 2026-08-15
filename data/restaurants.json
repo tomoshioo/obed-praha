@@ -1,6 +1,6 @@
 {
- "generated": "2026-08-14T09:10:14Z",
- "menu_date": "pátek 14. 8. 2026",
+ "generated": "2026-08-15T08:32:10Z",
+ "menu_date": "sobota 15. 8. 2026",
  "count": 211,
  "restaurants": [
   {
@@ -2855,25 +2855,8 @@
    "lat": 50.0771791,
    "lng": 14.4521443,
    "url": "https://utelleru.choiceqr.com/section:poledni-menu",
-   "menu": [
-    {
-     "text": "Náš tip:\t\tPORCHETTA - pečená roláda z vepřového boku s bylinkami,\t\t\t\t\t špenát s parmazánem a smetanou, bramborová kaše",
-     "price": "229 Kč"
-    },
-    {
-     "text": "1.\tSMAŽENÝ DRŮBEŽÍ KARBANÁTEK, mačkané brambory, rajčatový salát",
-     "price": "189 Kč"
-    },
-    {
-     "text": "2. TRHANÁ HLÍVA V PITA CHLEBU, okurkové tzatziki, mesclun",
-     "price": "189 Kč"
-    },
-    {
-     "text": "3.\tHOVĚZÍ TOKÁŇ na bílém víně s paprikami, dušená rýže",
-     "price": "179 Kč"
-    }
-   ],
-   "menu_status": "scraped",
+   "menu": [],
+   "menu_status": "link",
    "menu_url": "https://utelleru.choiceqr.com/section:poledni-menu",
    "platform": "choiceqr",
    "source": "web",
