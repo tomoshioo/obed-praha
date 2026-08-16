@@ -1,6 +1,6 @@
 {
- "generated": "2026-08-15T08:32:10Z",
- "menu_date": "sobota 15. 8. 2026",
+ "generated": "2026-08-16T08:32:29Z",
+ "menu_date": "neděle 16. 8. 2026",
  "count": 211,
  "restaurants": [
   {
@@ -2008,11 +2008,15 @@
    "url": "https://chilliandlime.choiceqr.com/section:poledni-menu",
    "menu": [
     {
-     "text": "M1 - PHO TRON GA",
+     "text": "M1 - CHICKEN TERIYAKI",
      "price": "199 Kč"
     },
     {
-     "text": "M1 Veggie - PHO TRON DAU",
+     "text": "M2 - BEEF PEPPER",
+     "price": "209 Kč"
+    },
+    {
+     "text": "M2 Veggie - TOFU PEPPER",
      "price": "199 Kč"
     }
    ],
