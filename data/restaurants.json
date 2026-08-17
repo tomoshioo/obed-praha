@@ -1,6 +1,6 @@
 {
- "generated": "2026-08-16T08:32:29Z",
- "menu_date": "neděle 16. 8. 2026",
+ "generated": "2026-08-17T08:46:53Z",
+ "menu_date": "pondělí 17. 8. 2026",
  "count": 211,
  "restaurants": [
   {
@@ -2859,8 +2859,25 @@
    "lat": 50.0771791,
    "lng": 14.4521443,
    "url": "https://utelleru.choiceqr.com/section:poledni-menu",
-   "menu": [],
-   "menu_status": "link",
+   "menu": [
+    {
+     "text": "Náš tip:\t\tVEPŘOVÝ BOK NA ZÁZVORU A MEDU,\t\t\t\t\t restovaný pak-choi, jasmínová rýže se sezamem, presovaná okurka",
+     "price": "229 Kč"
+    },
+    {
+     "text": "1.\tPŘÍRODNÍ KUŘECÍ ŘÍZEK, brambory vařené v páře, šopský salát",
+     "price": "189 Kč"
+    },
+    {
+     "text": "2. veg NADÍVANÉ PORTOBELLO HOUBY, pečené grenaille, rucolový salát s jablky",
+     "price": "189 Kč"
+    },
+    {
+     "text": "3.\tSVÍČKOVÁ OMÁČKA se sekanou pečení, domácí houskové knedlíky",
+     "price": "179 Kč"
+    }
+   ],
+   "menu_status": "scraped",
    "menu_url": "https://utelleru.choiceqr.com/section:poledni-menu",
    "platform": "choiceqr",
    "source": "web",
