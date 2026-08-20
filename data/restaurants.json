@@ -1,6 +1,6 @@
 {
- "generated": "2026-08-19T08:40:48Z",
- "menu_date": "středa 19. 8. 2026",
+ "generated": "2026-08-20T08:41:41Z",
+ "menu_date": "čtvrtek 20. 8. 2026",
  "count": 211,
  "restaurants": [
   {
@@ -2861,19 +2861,23 @@
    "url": "https://utelleru.choiceqr.com/section:poledni-menu",
    "menu": [
     {
-     "text": "Náš tip:\t\tHOVĚZÍ BRISKET S PEPŘOVOU OMÁČKOU,\t\t\t\t\t listový špenát na másle, krémová polenta s bylinkami",
+     "text": "veg ŽAMPIÓNOVÝ KRÉM S PETRŽELÍ",
+     "price": "59 Kč"
+    },
+    {
+     "text": "Náš tip:\t\t1/4 PEČENÉ KACHNY NA KMÍNĚ,\t\t\t\t\t červené vinné zelí, kynuté houskové knedlíky",
      "price": "249 Kč"
     },
     {
-     "text": "1.\tKUŘECÍ ŘÍZEČKY v parmazánové strouhance, bramborová kaše, mesclun",
+     "text": "1.\tGRILOVANÝ CAMEMBERT v anglické slanině, pažitkové brambory, brusinky",
      "price": "189 Kč"
     },
     {
-     "text": "2.\tHALUŠKY S UZENÝM MASEM a kysaným zelím, vídeňská cibulka",
+     "text": "2.\tFALEŠNÁ HOVĚZÍ SVÍČKOVÁ alà pražská pečeně, hrášková rýže",
      "price": "189 Kč"
     },
     {
-     "text": "3.\tSALÁT S TUŇÁKEM, sušenými rajčaty, vejcem a medovým dresinkem",
+     "text": "3.\tKUŘECÍ RIZOTO z bulguru s uzeným sýrem a zeleninou, kyselá okurka",
      "price": "179 Kč"
     }
    ],
