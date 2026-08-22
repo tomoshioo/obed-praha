@@ -1,6 +1,6 @@
 {
- "generated": "2026-08-21T08:43:21Z",
- "menu_date": "pátek 21. 8. 2026",
+ "generated": "2026-08-22T08:33:19Z",
+ "menu_date": "sobota 22. 8. 2026",
  "count": 211,
  "restaurants": [
   {
@@ -2859,29 +2859,8 @@
    "lat": 50.0771791,
    "lng": 14.4521443,
    "url": "https://utelleru.choiceqr.com/section:poledni-menu",
-   "menu": [
-    {
-     "text": "veg VALAŠSKÁ KYSELICA S HOUBAMI",
-     "price": "59 Kč"
-    },
-    {
-     "text": "Náš tip: KUŘECÍ SUPRÈME S HOLANDSKOU OMÁČKOU, grilovaná cuketa, pečené zámecké brambory",
-     "price": "239 Kč"
-    },
-    {
-     "text": "1. GRATINOVANÝ LILEK masovou směsí a goudou, cous - cous",
-     "price": "189 Kč"
-    },
-    {
-     "text": "2. PEČENÁ VEPŘOVÁ KRKOVICE, cibulové zelí, bramborové knedlíky",
-     "price": "189 Kč"
-    },
-    {
-     "text": "3. veg ZELENINOVÉ BURRITO se sýrem cheddar, limetová majonéza, mesclun",
-     "price": "179 Kč"
-    }
-   ],
-   "menu_status": "scraped",
+   "menu": [],
+   "menu_status": "link",
    "menu_url": "https://utelleru.choiceqr.com/section:poledni-menu",
    "platform": "choiceqr",
    "source": "web",
