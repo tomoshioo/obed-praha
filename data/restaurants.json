@@ -1,6 +1,6 @@
 {
- "generated": "2026-08-23T08:33:12Z",
- "menu_date": "neděle 23. 8. 2026",
+ "generated": "2026-08-24T08:51:25Z",
+ "menu_date": "pondělí 24. 8. 2026",
  "count": 211,
  "restaurants": [
   {
@@ -2008,16 +2008,16 @@
    "url": "https://chilliandlime.choiceqr.com/section:poledni-menu",
    "menu": [
     {
-     "text": "M1 - CHICKEN TERIYAKI",
+     "text": "M1 - PHO XAO GA",
      "price": "199 Kč"
     },
     {
-     "text": "M2 - BEEF PEPPER",
+     "text": "M1 Veggie - PHO XAO DAU",
+     "price": "199 Kč"
+    },
+    {
+     "text": "M2 - THAI BASIL BEEF",
      "price": "209 Kč"
-    },
-    {
-     "text": "M2 Veggie - TOFU PEPPER",
-     "price": "199 Kč"
     }
    ],
    "menu_status": "scraped",
@@ -2859,8 +2859,25 @@
    "lat": 50.0771791,
    "lng": 14.4521443,
    "url": "https://utelleru.choiceqr.com/section:poledni-menu",
-   "menu": [],
-   "menu_status": "link",
+   "menu": [
+    {
+     "text": "Náš tip: PEČENÝ FILET TRESKY S CITRÓNOVOU OMÁČKOU, brokolice na másle, pečené mladé brambory",
+     "price": "249 Kč"
+    },
+    {
+     "text": "1. KRŮTÍ ZÁVITEK se slaninou a rozmarýnem, bramborová kaše, salát coleslaw",
+     "price": "189 Kč"
+    },
+    {
+     "text": "2. HOVĚZÍ NA ŽAMPIÓNECH, dušená jasmínová rýže",
+     "price": "189 Kč"
+    },
+    {
+     "text": "3. KUŘECÍ KŘÍDLA V BBQ marinádě, zelenina, bylinkový dip, bageta",
+     "price": "179 Kč"
+    }
+   ],
+   "menu_status": "scraped",
    "menu_url": "https://utelleru.choiceqr.com/section:poledni-menu",
    "platform": "choiceqr",
    "source": "web",
