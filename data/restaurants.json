@@ -1,6 +1,6 @@
 {
- "generated": "2026-08-24T08:51:25Z",
- "menu_date": "pondělí 24. 8. 2026",
+ "generated": "2026-08-25T08:46:20Z",
+ "menu_date": "úterý 25. 8. 2026",
  "count": 211,
  "restaurants": [
   {
@@ -2861,19 +2861,23 @@
    "url": "https://utelleru.choiceqr.com/section:poledni-menu",
    "menu": [
     {
-     "text": "Náš tip: PEČENÝ FILET TRESKY S CITRÓNOVOU OMÁČKOU, brokolice na másle, pečené mladé brambory",
+     "text": "HOVĚZÍ VÝVAR S JÁTROVÝMI KNEDLÍČKY",
+     "price": "59 Kč"
+    },
+    {
+     "text": "Náš tip:\t\tSMAŽENÉ ŘÍZEČKY Z VEPŘOVÉ PANENKY V BYLINKOVÉ STROUHANCE,\t\t\t\t\t  brambory vařené v páře, okurkový salát s kysanou smetanou a koprem",
      "price": "249 Kč"
     },
     {
-     "text": "1. KRŮTÍ ZÁVITEK se slaninou a rozmarýnem, bramborová kaše, salát coleslaw",
+     "text": "1. KUŘECÍ KUNG - PAO s arašídy a jarní cibulkou, jasmínová rýže",
      "price": "189 Kč"
     },
     {
-     "text": "2. HOVĚZÍ NA ŽAMPIÓNECH, dušená jasmínová rýže",
+     "text": "2. FALEŠNÁ HOVĚZÍ SVÍČKOVÁ na česneku, šťouchané brambory se špenátem",
      "price": "189 Kč"
     },
     {
-     "text": "3. KUŘECÍ KŘÍDLA V BBQ marinádě, zelenina, bylinkový dip, bageta",
+     "text": "3. BAVORSKÉ KLOBÁSY s hrachovou kaší a cibulkou, kyselá okurka",
      "price": "179 Kč"
     }
    ],
