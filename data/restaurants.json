@@ -1,6 +1,6 @@
 {
- "generated": "2026-10-23T13:12:13Z",
- "menu_date": "pátek 23. 10. 2026",
+ "generated": "2026-10-24T12:30:32Z",
+ "menu_date": "sobota 24. 10. 2026",
  "count": 211,
  "restaurants": [
   {
@@ -3426,8 +3426,41 @@
    "lat": 50.0868483,
    "lng": 14.4488204,
    "url": "https://victorbeer.choiceqr.com/section:poledni-menu",
-   "menu": [],
-   "menu_status": "link",
+   "menu": [
+    {
+     "text": "Anglická snídaně",
+     "price": "220 Kč"
+    },
+    {
+     "text": "Shakshuka",
+     "price": "200 Kč"
+    },
+    {
+     "text": "Tvarohové lívance",
+     "price": "200 Kč"
+    },
+    {
+     "text": "Quinoa s avokádem",
+     "price": "200 Kč"
+    },
+    {
+     "text": "Benedikt s lososem",
+     "price": "200 Kč"
+    },
+    {
+     "text": "Ovesná kaše",
+     "price": "180 Kč"
+    },
+    {
+     "text": "Míchaná vajíčka",
+     "price": "180 Kč"
+    },
+    {
+     "text": "Omeleta s brokolicí",
+     "price": "180 Kč"
+    }
+   ],
+   "menu_status": "scraped",
    "menu_url": "https://victorbeer.choiceqr.com/section:poledni-menu",
    "platform": "choiceqr",
    "source": "web",
