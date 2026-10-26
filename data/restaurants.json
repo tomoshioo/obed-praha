@@ -1,6 +1,6 @@
 {
- "generated": "2026-10-25T13:02:09Z",
- "menu_date": "neděle 25. 10. 2026",
+ "generated": "2026-10-26T14:57:02Z",
+ "menu_date": "pondělí 26. 10. 2026",
  "count": 211,
  "restaurants": [
   {
@@ -2008,16 +2008,16 @@
    "url": "https://chilliandlime.choiceqr.com/section:poledni-menu",
    "menu": [
     {
-     "text": "M1 - CHICKEN TERIYAKI",
+     "text": "M1 - PHO XAO GA",
      "price": "199 Kč"
     },
     {
-     "text": "M2 - BEEF PEPPER",
+     "text": "M1 Veggie - PHO XAO DAU",
+     "price": "199 Kč"
+    },
+    {
+     "text": "M2 - THAI BASIL BEEF",
      "price": "209 Kč"
-    },
-    {
-     "text": "M2 Veggie - TOFU PEPPER",
-     "price": "199 Kč"
     }
    ],
    "menu_status": "scraped",
@@ -3426,41 +3426,8 @@
    "lat": 50.0868483,
    "lng": 14.4488204,
    "url": "https://victorbeer.choiceqr.com/section:poledni-menu",
-   "menu": [
-    {
-     "text": "Anglická snídaně",
-     "price": "220 Kč"
-    },
-    {
-     "text": "Shakshuka",
-     "price": "200 Kč"
-    },
-    {
-     "text": "Tvarohové lívance",
-     "price": "200 Kč"
-    },
-    {
-     "text": "Quinoa s avokádem",
-     "price": "200 Kč"
-    },
-    {
-     "text": "Benedikt s lososem",
-     "price": "200 Kč"
-    },
-    {
-     "text": "Ovesná kaše",
-     "price": "180 Kč"
-    },
-    {
-     "text": "Míchaná vajíčka",
-     "price": "180 Kč"
-    },
-    {
-     "text": "Omeleta s brokolicí",
-     "price": "180 Kč"
-    }
-   ],
-   "menu_status": "scraped",
+   "menu": [],
+   "menu_status": "link",
    "menu_url": "https://victorbeer.choiceqr.com/section:poledni-menu",
    "platform": "choiceqr",
    "source": "web",
