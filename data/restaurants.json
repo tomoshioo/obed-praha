@@ -1,6 +1,6 @@
 {
- "generated": "2026-10-28T14:56:42Z",
- "menu_date": "středa 28. 10. 2026",
+ "generated": "2026-10-29T15:01:46Z",
+ "menu_date": "čtvrtek 29. 10. 2026",
  "count": 211,
  "restaurants": [
   {
@@ -2006,8 +2006,21 @@
    "lat": 50.0804166,
    "lng": 14.4542752,
    "url": "https://chilliandlime.choiceqr.com/section:poledni-menu",
-   "menu": [],
-   "menu_status": "link",
+   "menu": [
+    {
+     "text": "M1 - PHO XAO GA",
+     "price": "199 Kč"
+    },
+    {
+     "text": "M1 Veggie - PHO XAO DAU",
+     "price": "199 Kč"
+    },
+    {
+     "text": "M2 - THAI BASIL BEEF",
+     "price": "209 Kč"
+    }
+   ],
+   "menu_status": "scraped",
    "menu_url": "https://chilliandlime.choiceqr.com/section:poledni-menu",
    "platform": "choiceqr",
    "source": "web",
