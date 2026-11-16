@@ -1,6 +1,6 @@
 {
- "generated": "2026-11-15T15:28:31Z",
- "menu_date": "neděle 15. 11. 2026",
+ "generated": "2026-11-16T18:06:06Z",
+ "menu_date": "pondělí 16. 11. 2026",
  "count": 211,
  "restaurants": [
   {
@@ -2006,21 +2006,8 @@
    "lat": 50.0804166,
    "lng": 14.4542752,
    "url": "https://chilliandlime.choiceqr.com/section:poledni-menu",
-   "menu": [
-    {
-     "text": "M1 GA SA OT",
-     "price": "199 Kč"
-    },
-    {
-     "text": "M1 Veggie - DAU SA OT",
-     "price": "199 Kč"
-    },
-    {
-     "text": "M2 - BO XAO DUA",
-     "price": "209 Kč"
-    }
-   ],
-   "menu_status": "scraped",
+   "menu": [],
+   "menu_status": "link",
    "menu_url": "https://chilliandlime.choiceqr.com/section:poledni-menu",
    "platform": "choiceqr",
    "source": "web",
